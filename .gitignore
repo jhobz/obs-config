@@ -1,0 +1,4 @@
+crashes/
+logs/
+profiler_data/
+basic/profiles/**/service.json
