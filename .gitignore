@@ -2,3 +2,5 @@ crashes/
 logs/
 profiler_data/
 basic/profiles/**/service.json
+basic/profiles/**/service.json.bak
+*.bak

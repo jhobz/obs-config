@@ -1,3 +1,5 @@
 {
-    "bitrate": 1250
+    "bitrate": 2000,
+    "keyint_sec": 2,
+    "profile": "high"
 }

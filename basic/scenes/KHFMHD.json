@@ -1,5 +1,7 @@
 {
     "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -23,6 +25,8 @@
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -40,38 +44,117 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "default"
+            "device_id": "{0.0.0.00000000}.{ededc1d7-b142-4a18-8f48-b5cc395ed040}"
         },
         "sync": 0,
         "volume": 1.0
     },
+    "current_program_scene": "Stream (Any% Beginner)",
     "current_scene": "Stream (Any% Beginner)",
+    "current_transition": "Fade",
     "name": "KHFMHD",
+    "quick_transitions": [],
     "scene_order": [
         {
             "name": "Intermission"
         },
         {
-            "name": "Stream (Any% Beginner)"
-        },
-        {
             "name": "Black Screen"
         },
         {
-            "name": "Stream (All Worlds Beginner)"
-        },
-        {
-            "name": "Stream (Any% Proud)"
+            "name": "Stream (Any% Beginner)"
         },
         {
             "name": "Wiki Editing"
         },
         {
-            "name": "Monitor"
+            "name": "Full Game"
+        },
+        {
+            "name": "Full Cam"
         }
     ],
     "sources": [
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Video:Webcam": [],
+                "libobs.show_scene_item.Video:Webcam": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "muted": false,
+            "name": "Full Cam",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Video:Webcam",
+                        "pos": {
+                            "x": 370.0,
+                            "y": 180.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "muted": false,
+            "name": "Text:Q&A",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color1": 4278190080,
+                "color2": 4283256141,
+                "font": {
+                    "face": "Bebas Neue Bold",
+                    "flags": 1,
+                    "size": 100,
+                    "style": ""
+                },
+                "text": "Q&A in chat"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -81,12 +164,14 @@
                 "libobs.hide_scene_item.Text:BRB": [],
                 "libobs.hide_scene_item.Text:ComingUp": [],
                 "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
+                "libobs.hide_scene_item.Text:Q&A": [],
                 "libobs.hide_scene_item.Text:StartingSoon": [],
                 "libobs.show_scene_item.Image:Background": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
                 "libobs.show_scene_item.Text:BRB": [],
                 "libobs.show_scene_item.Text:ComingUp": [],
                 "libobs.show_scene_item.Text:NowPlaying (Big)": [],
+                "libobs.show_scene_item.Text:Q&A": [],
                 "libobs.show_scene_item.Text:StartingSoon": []
             },
             "id": "scene",
@@ -107,6 +192,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Background",
                         "pos": {
                             "x": 0.0,
@@ -127,6 +216,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:StartingSoon",
                         "pos": {
                             "x": 960.0,
@@ -137,7 +230,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -147,6 +240,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 0.0,
@@ -167,6 +264,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying (Big)",
                         "pos": {
                             "x": 193.0,
@@ -187,6 +288,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:ComingUp",
                         "pos": {
                             "x": 1233.0,
@@ -207,15 +312,43 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:BRB",
                         "pos": {
-                            "x": 760.5,
-                            "y": 26.0
+                            "x": 863.4122314453125,
+                            "y": 94.399993896484375
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 4.75,
-                            "y": 4.7586207389831543
+                            "x": 0.82202380895614624,
+                            "y": 0.82222223281860352
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Text:Q&A",
+                        "pos": {
+                            "x": 404.0,
+                            "y": 487.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "visible": false
                     }
@@ -225,6 +358,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -232,7 +367,7 @@
                 "libobs.hide_scene_item.Image:KH Logo": [],
                 "libobs.hide_scene_item.Image:Layout": [],
                 "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Text:Leaderboard": [],
+                "libobs.hide_scene_item.Lb:Beginner": [],
                 "libobs.hide_scene_item.Text:NowPlaying": [],
                 "libobs.hide_scene_item.Text:Scrolling": [],
                 "libobs.hide_scene_item.Timer:Graph": [],
@@ -242,7 +377,7 @@
                 "libobs.show_scene_item.Image:KH Logo": [],
                 "libobs.show_scene_item.Image:Layout": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Text:Leaderboard": [],
+                "libobs.show_scene_item.Lb:Beginner": [],
                 "libobs.show_scene_item.Text:NowPlaying": [],
                 "libobs.show_scene_item.Text:Scrolling": [],
                 "libobs.show_scene_item.Timer:Graph": [],
@@ -263,11 +398,15 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:LGP",
                         "pos": {
                             "x": 110.0,
@@ -288,6 +427,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 5.0,
@@ -308,6 +451,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Graph",
                         "pos": {
                             "x": 11.0,
@@ -328,6 +475,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
@@ -348,6 +499,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Splits",
                         "pos": {
                             "x": 6.0,
@@ -368,6 +523,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
@@ -388,6 +547,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:KH Logo",
                         "pos": {
                             "x": 55.0,
@@ -408,7 +571,11 @@
                         },
                         "bounds_align": 2,
                         "bounds_type": 0,
-                        "name": "Text:Leaderboard",
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Lb:Beginner",
                         "pos": {
                             "x": 6.0,
                             "y": 956.0
@@ -428,6 +595,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
@@ -448,6 +619,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
@@ -466,6 +641,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -486,9 +663,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -516,13 +697,14 @@
             },
             "id": "dshow_input",
             "mixers": 15,
-            "muted": false,
+            "muted": true,
             "name": "Video:Webcam",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "buffering": 0,
                 "last_resolution": "1280x720",
                 "last_video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&8a8fb54&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
                 "res_type": 1,
@@ -533,6 +715,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -554,9 +738,11 @@
                 "video_device_id": "LGP Stream Engine:"
             },
             "sync": 0,
-            "volume": 0.15746393799781799
+            "volume": 0.1326509565114975
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -576,9 +762,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -609,15 +799,20 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r11_ad1:LiveSplit.exe"
+                "cursor": false,
+                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r12_ad1:LiveSplit.exe"
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -647,12 +842,15 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r11_ad1:LiveSplit.exe"
+                "cursor": false,
+                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r12_ad1:LiveSplit.exe"
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -671,6 +869,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -703,6 +903,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -722,9 +924,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -751,7 +957,7 @@
             "id": "text_ft2_source",
             "mixers": 0,
             "muted": false,
-            "name": "Text:Leaderboard",
+            "name": "Lb:Beginner",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -775,9 +981,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -793,7 +1003,7 @@
                         "cx": 888,
                         "cy": 30,
                         "limit_cx": true,
-                        "limit_cy": true,
+                        "limit_cy": false,
                         "speed_x": 50.0
                     },
                     "sync": 0,
@@ -820,495 +1030,15 @@
                     "size": 28,
                     "style": ""
                 },
-                "text": "             //  These are NOT my PB splits. | Please feel free to provide feedback on the new layout, I'm always open to suggestions, but please keep in mind that the layout of the Leaderboards text is temporary. | Try interacting with TheSaltyBot in chat via !commands. If there are any commands you think I should add, I'm all ears. | For announcements regarding my streaming schedule and plans, please follow me on Twitter.",
+                "text": "             // English because RPGLB! Go follow twitch.tv/rpglimitbreak.",
                 "word_wrap": false
             },
             "sync": 0,
             "volume": 1.0
         },
         {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Image:KH Logo": [],
-                "libobs.hide_scene_item.Image:Layout": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Text:Leaderboard": [],
-                "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.hide_scene_item.Timer:Graph": [],
-                "libobs.hide_scene_item.Timer:Splits": [],
-                "libobs.hide_scene_item.Video:LGP": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
-                "libobs.show_scene_item.Image:KH Logo": [],
-                "libobs.show_scene_item.Image:Layout": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Text:Leaderboard": [],
-                "libobs.show_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Timer:Graph": [],
-                "libobs.show_scene_item.Timer:Splits": [],
-                "libobs.show_scene_item.Video:LGP": [],
-                "libobs.show_scene_item.Video:Webcam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "muted": false,
-            "name": "Stream (All Worlds Beginner)",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Video:LGP",
-                        "pos": {
-                            "x": 110.0,
-                            "y": 62.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.94270831346511841,
-                            "y": 0.94259262084960938
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Video:Webcam",
-                        "pos": {
-                            "x": 5.0,
-                            "y": 326.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.22343750298023224,
-                            "y": 0.22361111640930176
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Timer:Graph",
-                        "pos": {
-                            "x": 101.0,
-                            "y": 73.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.75,
-                            "y": 0.74380165338516235
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:Layout",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Timer:Splits",
-                        "pos": {
-                            "x": 6.0,
-                            "y": 492.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.80937498807907104,
-                            "y": 0.80909091234207153
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:NowPlayingAlbum",
-                        "pos": {
-                            "x": 112.0,
-                            "y": 5.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.10599999874830246,
-                            "y": 0.10599999874830246
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Text:NowPlaying (Big)",
-                        "pos": {
-                            "x": 171.0,
-                            "y": 11.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 0,
-                        "bounds": {
-                            "x": 56.0,
-                            "y": 62.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:KH Logo",
-                        "pos": {
-                            "x": 55.0,
-                            "y": 920.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.17177914083003998,
-                            "y": 0.1736694723367691
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 88.0,
-                            "y": 111.0
-                        },
-                        "bounds_align": 2,
-                        "bounds_type": 0,
-                        "name": "Text:Leaderboard",
-                        "pos": {
-                            "x": 6.0,
-                            "y": 956.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Text:Scrolling",
-                        "pos": {
-                            "x": 516.0,
-                            "y": 17.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Image:KH Logo": [],
-                "libobs.hide_scene_item.Image:Layout": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Text:Leaderboard": [],
-                "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.hide_scene_item.Timer:Graph": [],
-                "libobs.hide_scene_item.Timer:Splits": [],
-                "libobs.hide_scene_item.Video:LGP": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
-                "libobs.show_scene_item.Image:KH Logo": [],
-                "libobs.show_scene_item.Image:Layout": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Text:Leaderboard": [],
-                "libobs.show_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Timer:Graph": [],
-                "libobs.show_scene_item.Timer:Splits": [],
-                "libobs.show_scene_item.Video:LGP": [],
-                "libobs.show_scene_item.Video:Webcam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "muted": false,
-            "name": "Stream (Any% Proud)",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Video:LGP",
-                        "pos": {
-                            "x": 110.0,
-                            "y": 62.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.94270831346511841,
-                            "y": 0.94259262084960938
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Video:Webcam",
-                        "pos": {
-                            "x": 5.0,
-                            "y": 326.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.22343750298023224,
-                            "y": 0.22361111640930176
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Timer:Graph",
-                        "pos": {
-                            "x": 101.0,
-                            "y": 73.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.75,
-                            "y": 0.74380165338516235
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:Layout",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Timer:Splits",
-                        "pos": {
-                            "x": 6.0,
-                            "y": 492.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.80937498807907104,
-                            "y": 0.80909091234207153
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:NowPlayingAlbum",
-                        "pos": {
-                            "x": 112.0,
-                            "y": 5.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.10599999874830246,
-                            "y": 0.10599999874830246
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Text:NowPlaying (Big)",
-                        "pos": {
-                            "x": 171.0,
-                            "y": 11.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 0,
-                        "bounds": {
-                            "x": 56.0,
-                            "y": 62.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Image:KH Logo",
-                        "pos": {
-                            "x": 55.0,
-                            "y": 920.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.17177914083003998,
-                            "y": 0.1736694723367691
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 88.0,
-                            "y": 111.0
-                        },
-                        "bounds_align": 2,
-                        "bounds_type": 0,
-                        "name": "Text:Leaderboard",
-                        "pos": {
-                            "x": 6.0,
-                            "y": 956.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Text:Scrolling",
-                        "pos": {
-                            "x": 516.0,
-                            "y": 17.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -1327,6 +1057,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -1353,6 +1085,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -1382,6 +1116,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -1403,12 +1139,14 @@
                     "style": ""
                 },
                 "outline": false,
-                "text": "Coming Up:\n   Kingdom Hearts FM HD\n   Any% (Beginner)\n   Race w/nerds"
+                "text": "Coming Up:\n   KHFM HD Any% (Beginner)\n   Race w/DutchPotato"
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -1444,6 +1182,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:LGP",
                         "pos": {
                             "x": 957.0,
@@ -1464,6 +1206,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "WR Video",
                         "pos": {
                             "x": 961.0,
@@ -1484,6 +1230,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Wiki",
                         "pos": {
                             "x": 0.0,
@@ -1504,6 +1254,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Editor",
                         "pos": {
                             "x": 0.0,
@@ -1524,6 +1278,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 120.0,
@@ -1544,6 +1302,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 0.0,
@@ -1562,9 +1324,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1604,68 +1370,13 @@
             "volume": 1.0
         },
         {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Display Capture": [],
-                "libobs.show_scene_item.Display Capture": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "muted": false,
-            "name": "Monitor",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "Display Capture",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "monitor_capture",
-            "mixers": 0,
-            "muted": false,
-            "name": "Display Capture",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1704,9 +1415,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1746,6 +1461,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -1759,17 +1476,278 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color1": 4278190080,
-                "color2": 4278190080,
+                "color2": 4283256141,
                 "font": {
                     "face": "Bebas Neue Regular",
                     "flags": 0,
-                    "size": 72,
+                    "size": 200,
                     "style": ""
                 },
                 "text": "BRB"
             },
             "sync": 0,
             "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Timer:Splitless": [],
+                "libobs.hide_scene_item.Timer:Transparent": [],
+                "libobs.hide_scene_item.Video:LGP": [],
+                "libobs.show_scene_item.Timer:Splitless": [],
+                "libobs.show_scene_item.Timer:Transparent": [],
+                "libobs.show_scene_item.Video:LGP": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "muted": false,
+            "name": "Full Game",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Video:LGP",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Timer:Splitless",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 2.1404495239257813,
+                            "y": 2.1400001049041748
+                        },
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Timer:Transparent",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 221.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "visible": false
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Color Key",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4279900698,
+                        "key_color_type": "custom"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Blue",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4291982873,
+                        "key_color_type": "custom",
+                        "similarity": 620
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "muted": false,
+            "name": "Timer:Splitless",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "cursor": false,
+                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r12_ad1:LiveSplit.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "crop_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Crop",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "bottom": 120
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Color Key",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4279900698,
+                        "key_color_type": "custom",
+                        "similarity": 80
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Color Key2",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4280887593,
+                        "key_color_type": "custom"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "muted": false,
+            "name": "Timer:Transparent",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "cursor": false,
+                "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r12_ad1:LiveSplit.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        }
+    ],
+    "transition_duration": 300,
+    "transitions": [
+        {
+            "id": "swipe_transition",
+            "name": "Swipe",
+            "settings": {}
         }
     ]
 }
