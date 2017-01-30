@@ -1,5 +1,7 @@
 {
     "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -23,6 +25,8 @@
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -49,6 +53,7 @@
     "current_scene": "Stream (Co-op)",
     "current_transition": "Fade",
     "name": "Portal 2",
+    "preview_locked": false,
     "quick_transitions": [],
     "scene_order": [
         {
@@ -66,9 +71,14 @@
     ],
     "sources": [
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "hotkey_start": [],
+                "hotkey_stop": []
+            },
             "id": "game_capture",
             "mixers": 0,
             "muted": false,
@@ -85,6 +95,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -120,6 +132,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Background",
                         "pos": {
                             "x": 0.0,
@@ -130,6 +146,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -140,6 +157,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:StartingSoon",
                         "pos": {
                             "x": 960.0,
@@ -150,6 +171,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -160,6 +182,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 0.0,
@@ -170,6 +196,7 @@
                             "x": 0.37799999117851257,
                             "y": 0.37799999117851257
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -180,6 +207,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying (Big)",
                         "pos": {
                             "x": 193.0,
@@ -190,6 +221,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -200,6 +232,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:ComingUp",
                         "pos": {
                             "x": 1233.0,
@@ -210,6 +246,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -220,6 +257,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:BRB",
                         "pos": {
                             "x": 285.5166015625,
@@ -230,6 +271,7 @@
                             "x": 0.82202380895614624,
                             "y": 0.82222223281860352
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -238,6 +280,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -281,6 +325,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Game:Portal 2",
                         "pos": {
                             "x": 111.0,
@@ -291,6 +339,7 @@
                             "x": 0.94218748807907104,
                             "y": 0.94259262084960938
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -301,6 +350,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 5.0,
@@ -311,6 +364,7 @@
                             "x": 0.22343750298023224,
                             "y": 0.22361111640930176
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -321,6 +375,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Graph",
                         "pos": {
                             "x": 11.0,
@@ -331,6 +389,7 @@
                             "x": 0.75,
                             "y": -0.74380165338516235
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -341,6 +400,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
@@ -351,6 +414,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -361,6 +425,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Splits",
                         "pos": {
                             "x": 6.0,
@@ -371,6 +439,7 @@
                             "x": 0.80937498807907104,
                             "y": 0.80909091234207153
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -381,6 +450,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
@@ -391,6 +464,7 @@
                             "x": 0.10599999874830246,
                             "y": 0.10599999874830246
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -401,6 +475,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:KH Logo",
                         "pos": {
                             "x": 55.0,
@@ -411,6 +489,7 @@
                             "x": 0.17177914083003998,
                             "y": 0.1736694723367691
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -421,6 +500,10 @@
                         },
                         "bounds_align": 2,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Lb:Beginner",
                         "pos": {
                             "x": 6.0,
@@ -431,6 +514,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -441,6 +525,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
@@ -451,6 +539,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -461,6 +550,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
@@ -471,6 +564,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -479,6 +573,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -499,9 +595,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -546,6 +646,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -565,9 +667,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -605,9 +711,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -644,6 +754,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -662,6 +774,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -694,6 +808,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -713,9 +829,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -766,9 +886,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -818,6 +942,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -836,6 +962,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -862,6 +990,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -891,6 +1021,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -918,6 +1050,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -944,6 +1078,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -973,6 +1109,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Game:Portal 2",
                         "pos": {
                             "x": 0.0,
@@ -983,6 +1123,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -993,6 +1134,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Splitless",
                         "pos": {
                             "x": 0.0,
@@ -1003,6 +1148,7 @@
                             "x": 2.1404495239257813,
                             "y": 2.1400001049041748
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -1013,6 +1159,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Transparent",
                         "pos": {
                             "x": 0.0,
@@ -1023,6 +1173,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -1031,9 +1182,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1053,6 +1208,8 @@
                     "volume": 1.0
                 },
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1091,9 +1248,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1112,6 +1273,8 @@
                     "volume": 1.0
                 },
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1132,6 +1295,8 @@
                     "volume": 1.0
                 },
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -1169,5 +1334,6 @@
             "volume": 1.0
         }
     ],
-    "transition_duration": 300
+    "transition_duration": 300,
+    "transitions": []
 }

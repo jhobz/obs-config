@@ -1,6 +1,7 @@
 crashes/
 logs/
 profiler_data/
+plugin_config/
 basic/profiles/**/service.json
 basic/profiles/**/service.json.bak
 *.bak

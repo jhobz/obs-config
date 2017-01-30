@@ -53,6 +53,7 @@
     "current_scene": "Hulu",
     "current_transition": "Fade",
     "name": "Screenshare",
+    "preview_locked": false,
     "quick_transitions": [],
     "scene_order": [
         {
@@ -76,7 +77,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "cursor": false,
-                "window": "Watch Community Online - Digital Estate Planning | Hulu - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+                "window": "Netflix - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
             },
             "sync": 0,
             "volume": 1.0
@@ -123,6 +124,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]

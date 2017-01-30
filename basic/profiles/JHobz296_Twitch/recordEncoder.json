@@ -1,6 +1,4 @@
 {
-    "bitrate": 1250,
-    "profile": "main",
-    "rate_control": "CBR",
-    "use_bufsize": false
+    "bitrate": 6000,
+    "rate_control": "CRF"
 }

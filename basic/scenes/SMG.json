@@ -1,5 +1,7 @@
 {
     "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -23,6 +25,8 @@
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -40,13 +44,42 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "default"
+            "device_id": "{0.0.0.00000000}.{2a5bfb60-4058-4a1c-a41e-63c0ade688eb}"
         },
         "sync": 0,
-        "volume": 1.0
+        "volume": 0.30076295137405396
     },
-    "current_scene": "Stream (Any%)",
+    "current_program_scene": "Fullscreen Game (+webcam)",
+    "current_scene": "Fullscreen Game (+webcam)",
+    "current_transition": "Fade",
+    "modules": {
+        "auto-scene-switcher": {
+            "active": false,
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "switches": []
+        },
+        "captions": {
+            "enabled": false,
+            "lang_id": 1033,
+            "source": ""
+        },
+        "output-timer": {
+            "autoStartRecordTimer": false,
+            "autoStartStreamTimer": false,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 0,
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 0
+        }
+    },
     "name": "SMG",
+    "preview_locked": false,
+    "quick_transitions": [],
+    "scaling_mode": 0,
     "scene_order": [
         {
             "name": "Intermission"
@@ -63,6 +96,8 @@
     ],
     "sources": [
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -96,6 +131,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Background",
                         "pos": {
                             "x": 0.0,
@@ -106,6 +145,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -116,6 +156,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:StartingSoon",
                         "pos": {
                             "x": 960.0,
@@ -126,6 +170,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -136,6 +181,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 0.0,
@@ -146,6 +195,7 @@
                             "x": 0.37799999117851257,
                             "y": 0.37799999117851257
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -156,6 +206,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying (Big)",
                         "pos": {
                             "x": 193.0,
@@ -166,6 +220,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -176,6 +231,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:ComingUp",
                         "pos": {
                             "x": 1233.0,
@@ -186,6 +245,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -194,6 +254,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -232,11 +294,15 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:LGP",
                         "pos": {
                             "x": 110.0,
@@ -244,9 +310,10 @@
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.4140625,
-                            "y": 1.4138889312744141
+                            "x": 0.94270831346511841,
+                            "y": 0.94259262084960938
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -257,6 +324,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 5.0,
@@ -267,7 +338,8 @@
                             "x": 0.22343750298023224,
                             "y": 0.22361111640930176
                         },
-                        "visible": true
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -277,6 +349,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Graph",
                         "pos": {
                             "x": 11.0,
@@ -287,6 +363,7 @@
                             "x": 0.75,
                             "y": -0.74380165338516235
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -297,6 +374,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
@@ -307,6 +388,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -317,6 +399,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Splits",
                         "pos": {
                             "x": 6.0,
@@ -327,6 +413,7 @@
                             "x": 0.80937498807907104,
                             "y": 0.80909091234207153
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -337,6 +424,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
@@ -347,6 +438,7 @@
                             "x": 0.10599999874830246,
                             "y": 0.10599999874830246
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -357,6 +449,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Image:DK Logo",
                         "pos": {
                             "x": 55.0,
@@ -367,6 +463,7 @@
                             "x": 0.17177914083003998,
                             "y": 0.1736694723367691
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -377,6 +474,10 @@
                         },
                         "bounds_align": 2,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:Leaderboard",
                         "pos": {
                             "x": 6.0,
@@ -387,6 +488,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -397,6 +499,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
@@ -407,6 +513,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -417,6 +524,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
@@ -427,6 +538,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     }
                 ]
@@ -435,6 +547,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -455,9 +569,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -502,7 +620,34 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "crop_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Crop/Pad",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "bottom": 27,
+                        "left": 35,
+                        "right": 32,
+                        "top": 14
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
             "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
@@ -526,6 +671,8 @@
             "volume": 0.017575999721884727
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -545,9 +692,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -585,9 +736,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -601,6 +756,48 @@
                     "push-to-talk-delay": 0,
                     "settings": {
                         "bottom": 121
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Color Key",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4279900698,
+                        "key_color_type": "custom"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                },
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "color_key_filter",
+                    "mixers": 0,
+                    "muted": false,
+                    "name": "Color Key 2",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "key_color": 4280887593,
+                        "key_color_type": "custom"
                     },
                     "sync": 0,
                     "volume": 1.0
@@ -624,6 +821,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -642,6 +841,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -674,6 +875,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -693,9 +896,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -746,9 +953,13 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
                     "enabled": true,
                     "flags": 0,
                     "hotkeys": {},
@@ -765,7 +976,7 @@
                         "cy": 30,
                         "limit_cx": true,
                         "limit_cy": false,
-                        "speed_x": 8.0
+                        "speed_x": 50.0
                     },
                     "sync": 0,
                     "volume": 1.0
@@ -791,13 +1002,15 @@
                     "size": 28,
                     "style": ""
                 },
-                "text": "Doing this because I feel like it. No guarantees of finishing.                                    ",
+                "text": "      ~       Gonna play SMG this weekend while I wait for the new computer parts on Monday since Ori keeps lagging pretty hard. I suck, but this game is fun. :)",
                 "word_wrap": false
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -816,6 +1029,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -842,6 +1057,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -871,6 +1088,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
@@ -898,6 +1117,8 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -927,6 +1148,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:LGP",
                         "pos": {
                             "x": 0.0,
@@ -934,9 +1159,10 @@
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.5,
-                            "y": 1.5
+                            "x": 1.0393955707550049,
+                            "y": 1.0394610166549683
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -947,6 +1173,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 0.0,
@@ -957,6 +1187,7 @@
                             "x": 0.25932204723358154,
                             "y": 0.25972223281860352
                         },
+                        "scale_filter": "disable",
                         "visible": false
                     },
                     {
@@ -967,6 +1198,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Timer:Splits",
                         "pos": {
                             "x": 0.0,
@@ -977,6 +1212,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -984,5 +1220,7 @@
             "sync": 0,
             "volume": 1.0
         }
-    ]
+    ],
+    "transition_duration": 300,
+    "transitions": []
 }
