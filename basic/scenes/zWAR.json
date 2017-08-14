@@ -49,9 +49,33 @@
         "sync": 0,
         "volume": 0.438975989818573
     },
-    "current_program_scene": "Intro",
-    "current_scene": "Intro",
+    "current_program_scene": "Splash",
+    "current_scene": "Splash",
     "current_transition": "Fade",
+    "modules": {
+        "auto-scene-switcher": {
+            "active": false,
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "switches": []
+        },
+        "captions": {
+            "enabled": false,
+            "lang_id": 1033,
+            "source": ""
+        },
+        "output-timer": {
+            "autoStartRecordTimer": false,
+            "autoStartStreamTimer": false,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 0,
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 0
+        }
+    },
     "name": "zWAR",
     "preview_locked": false,
     "quick_transitions": [
@@ -68,6 +92,7 @@
             "name": "Fade"
         }
     ],
+    "scaling_mode": 0,
     "scene_order": [
         {
             "name": "Splash"

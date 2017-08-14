@@ -1,4 +1,3 @@
 {
-    "bitrate": 6000,
-    "rate_control": "CRF"
+    "bitrate": 12000
 }
