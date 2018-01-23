@@ -15,6 +15,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -39,8 +40,9 @@
         "id": "wasapi_output_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Desktop Audio",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -65,6 +67,7 @@
         "captions": {
             "enabled": false,
             "lang_id": 1033,
+            "provider": "mssapi",
             "source": ""
         },
         "output-timer": {
@@ -158,7 +161,10 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Scene"
@@ -180,11 +186,13 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Scene",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -198,18 +206,21 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
                         "name": "Video Capture Device",
                         "pos": {
-                            "x": 567.0,
-                            "y": 273.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.61406248807907104,
-                            "y": 0.61388885974884033
+                            "x": 1.5,
+                            "y": 1.5
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     }
                 ]
             },
@@ -229,19 +240,20 @@
             },
             "id": "dshow_input",
             "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
+            "monitoring_type": 2,
+            "muted": true,
             "name": "Video Capture Device",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
                 "last_resolution": "1280x720",
-                "last_video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&8a8fb54&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "last_video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}",
                 "res_type": 1,
                 "resolution": "1280x720",
-                "video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&8a8fb54&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+                "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
             },
             "sync": 0,
             "volume": 1.0

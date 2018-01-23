@@ -13,14 +13,14 @@
         "id": "wasapi_input_capture",
         "mixers": 15,
         "monitoring_type": 0,
-        "muted": true,
+        "muted": false,
         "name": "Mic/Aux",
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.1.00000000}.{0e2c457a-a019-45da-8ca1-68ee527cdb12}"
+            "device_id": "{0.0.1.00000000}.{1e2fb144-cdc5-45ea-90c0-03b33864cefd}"
         },
         "sync": 0,
         "volume": 1.0
@@ -46,10 +46,10 @@
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.0.00000000}.{2d6577ce-6bc2-4c0d-a5ab-db13148af5e3}"
+            "device_id": "{0.0.0.00000000}.{e540c705-9221-494f-8885-b5eefabe9bd7}"
         },
         "sync": 0,
-        "volume": 1.0
+        "volume": 0.054872002452611923
     },
     "current_program_scene": "Primary Monitor",
     "current_scene": "Primary Monitor",
@@ -145,7 +145,10 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Intermission"
@@ -165,19 +168,69 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "crop_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Crop/Pad",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "bottom": 40
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
             "flags": 0,
             "hotkeys": {},
             "id": "monitor_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Monitor 1",
+            "name": "Monitor 0",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Text:Q&A",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "monitor": 1
+                "color1": 4278190080,
+                "color2": 4283256141,
+                "font": {
+                    "face": "Bebas Neue Bold",
+                    "flags": 1,
+                    "size": 100,
+                    "style": ""
+                },
+                "text": "Q&A in chat"
             },
             "sync": 0,
             "volume": 1.0
@@ -189,27 +242,32 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Image:Layout": [],
+                "libobs.hide_scene_item.Image:Background": [],
                 "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Monitor 1": [],
-                "libobs.hide_scene_item.Text:NowPlaying": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Image:Layout": [],
+                "libobs.hide_scene_item.Text:BRB": [],
+                "libobs.hide_scene_item.Text:ComingUp": [],
+                "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
+                "libobs.hide_scene_item.Text:Q&A": [],
+                "libobs.hide_scene_item.Text:StartingSoon": [],
+                "libobs.show_scene_item.Image:Background": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Monitor 1": [],
-                "libobs.show_scene_item.Text:NowPlaying": [],
-                "libobs.show_scene_item.Text:Scrolling": []
+                "libobs.show_scene_item.Text:BRB": [],
+                "libobs.show_scene_item.Text:ComingUp": [],
+                "libobs.show_scene_item.Text:NowPlaying (Big)": [],
+                "libobs.show_scene_item.Text:Q&A": [],
+                "libobs.show_scene_item.Text:StartingSoon": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Secondary Monitor",
+            "name": "Intermission",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 7,
                 "items": [
                     {
                         "align": 5,
@@ -223,10 +281,93 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Monitor 1",
+                        "id": 1,
+                        "locked": false,
+                        "name": "Image:Background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 0,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Text:StartingSoon",
+                        "pos": {
+                            "x": 960.0,
+                            "y": 167.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Image:NowPlayingAlbum",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 891.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.37799999117851257,
+                            "y": 0.37799999117851257
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 4,
+                        "locked": false,
+                        "name": "Text:NowPlaying (Big)",
+                        "pos": {
+                            "x": 193.0,
+                            "y": 877.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -248,6 +389,151 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Text:ComingUp",
+                        "pos": {
+                            "x": 1233.0,
+                            "y": 426.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 6,
+                        "locked": false,
+                        "name": "Text:BRB",
+                        "pos": {
+                            "x": 863.4122314453125,
+                            "y": 94.399993896484375
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.82202380895614624,
+                            "y": 0.82222223281860352
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Text:Q&A",
+                        "pos": {
+                            "x": 404.0,
+                            "y": 487.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Image:Layout": [],
+                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Monitor 0": [],
+                "libobs.hide_scene_item.Text:NowPlaying": [],
+                "libobs.hide_scene_item.Text:Scrolling": [],
+                "libobs.show_scene_item.Image:Layout": [],
+                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.show_scene_item.Monitor 0": [],
+                "libobs.show_scene_item.Text:NowPlaying": [],
+                "libobs.show_scene_item.Text:Scrolling": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Primary Monitor",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Monitor 0",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 40.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 2,
+                        "locked": false,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
@@ -264,15 +550,17 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 50.0,
+                            "y": 50.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 0,
+                        "bounds_type": 1,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
@@ -289,15 +577,17 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 338.0,
+                            "y": 44.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 0,
+                        "bounds_type": 6,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 4,
+                        "locked": false,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
@@ -323,6 +613,8 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 5,
+                        "locked": false,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
@@ -346,117 +638,21 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:BRB",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4278190080,
-                "color2": 4283256141,
-                "font": {
-                    "face": "Bebas Neue Regular",
-                    "flags": 0,
-                    "size": 200,
-                    "style": ""
-                },
-                "text": "BRB"
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
             },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
+            "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Text:ComingUp",
+            "name": "Black Screen",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "color1": 4278190080,
-                "color2": 4283256141,
-                "font": {
-                    "face": "Bebas Neue Book",
-                    "flags": 0,
-                    "size": 72,
-                    "style": ""
-                },
-                "outline": false,
-                "text": "Coming Up:\n   KHFM HD Any% (Beginner)\n   Race w/DutchPotato"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:NowPlaying",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4294046193,
-                "color2": 4294046193,
-                "custom_width": 338,
-                "font": {
-                    "face": "Bebas Neue Bold",
-                    "flags": 1,
-                    "size": 22,
-                    "style": ""
-                },
-                "from_file": true,
-                "text": "",
-                "text_file": "D:/Documents/unp/unp_now_playing.txt"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:StartingSoon",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4278190080,
-                "color2": 4283256141,
-                "font": {
-                    "face": "Bebas Neue Light",
-                    "flags": 0,
-                    "size": 200,
-                    "style": ""
-                },
-                "text": "Starting Soon..."
+                "id_counter": 0,
+                "items": []
             },
             "sync": 0,
             "volume": 1.0
@@ -471,13 +667,70 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image:Background",
+            "name": "Image:Layout",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "J:/Pictures/khwallpaper.jpg"
+                "file": "D:/Pictures/Stream Layout/Inkscape/overlay_top_bar_only.png",
+                "unload": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Image:NowPlayingAlbum",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "D:/Documents/unp/unp_album_art.jpg"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Text:NowPlaying (Big)",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color1": 4278190080,
+                "color2": 4283256141,
+                "custom_width": 0,
+                "drop_shadow": false,
+                "font": {
+                    "face": "Bebas Neue Book",
+                    "flags": 0,
+                    "size": 120,
+                    "style": ""
+                },
+                "from_file": true,
+                "outline": false,
+                "text": "",
+                "text_file": "J:/Documents/unp/unp_now_playing.txt",
+                "word_wrap": false
             },
             "sync": 0,
             "volume": 1.0
@@ -534,8 +787,29 @@
                     "size": 28,
                     "style": ""
                 },
-                "text": "       ~        Finishing up some bracket animations/scenes for the Ori Tournament | Bracket show tonight at 9:30pm EDT!",
+                "text": "       ~        Working on stream improvements | Use !github in chat to get a link to the repository",
                 "word_wrap": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Image:Background",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "J:/Pictures/khwallpaper.jpg"
             },
             "sync": 0,
             "volume": 1.0
@@ -550,7 +824,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Text:NowPlaying (Big)",
+            "name": "Text:StartingSoon",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -558,19 +832,45 @@
             "settings": {
                 "color1": 4278190080,
                 "color2": 4283256141,
-                "custom_width": 0,
-                "drop_shadow": false,
                 "font": {
-                    "face": "Bebas Neue Book",
+                    "face": "Bebas Neue Light",
                     "flags": 0,
-                    "size": 120,
+                    "size": 200,
+                    "style": ""
+                },
+                "text": "Starting Soon..."
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Text:NowPlaying",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color1": 4294046193,
+                "color2": 4294046193,
+                "custom_width": 338,
+                "font": {
+                    "face": "Bebas Neue Bold",
+                    "flags": 1,
+                    "size": 22,
                     "style": ""
                 },
                 "from_file": true,
-                "outline": false,
                 "text": "",
-                "text_file": "J:/Documents/unp/unp_now_playing.txt",
-                "word_wrap": false
+                "text_file": "D:/Documents/unp/unp_now_playing.txt"
             },
             "sync": 0,
             "volume": 1.0
@@ -581,17 +881,26 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image:NowPlayingAlbum",
+            "name": "Text:ComingUp",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "D:/Documents/unp/unp_album_art.jpg"
+                "color1": 4278190080,
+                "color2": 4283256141,
+                "font": {
+                    "face": "Bebas Neue Book",
+                    "flags": 0,
+                    "size": 72,
+                    "style": ""
+                },
+                "outline": false,
+                "text": "Coming Up:\n   KHFM HD Any% (Beginner)\n   Race w/DutchPotato"
             },
             "sync": 0,
             "volume": 1.0
@@ -602,41 +911,25 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image:Layout",
+            "name": "Text:BRB",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "D:/Pictures/Stream Layout/Inkscape/overlay_top_bar_only.png",
-                "unload": false
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Black Screen",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": []
+                "color1": 4278190080,
+                "color2": 4283256141,
+                "font": {
+                    "face": "Bebas Neue Regular",
+                    "flags": 0,
+                    "size": 200,
+                    "style": ""
+                },
+                "text": "BRB"
             },
             "sync": 0,
             "volume": 1.0
@@ -650,12 +943,12 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Image:Layout": [],
                 "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Monitor 0": [],
+                "libobs.hide_scene_item.Monitor 1": [],
                 "libobs.hide_scene_item.Text:NowPlaying": [],
                 "libobs.hide_scene_item.Text:Scrolling": [],
                 "libobs.show_scene_item.Image:Layout": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Monitor 0": [],
+                "libobs.show_scene_item.Monitor 1": [],
                 "libobs.show_scene_item.Text:NowPlaying": [],
                 "libobs.show_scene_item.Text:Scrolling": []
             },
@@ -663,12 +956,13 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Primary Monitor",
+            "name": "Secondary Monitor",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 5,
                 "items": [
                     {
                         "align": 5,
@@ -682,10 +976,12 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Monitor 0",
+                        "id": 1,
+                        "locked": false,
+                        "name": "Monitor 1",
                         "pos": {
                             "x": 0.0,
-                            "y": 40.0
+                            "y": 0.0
                         },
                         "rot": 0.0,
                         "scale": {
@@ -707,6 +1003,8 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 2,
+                        "locked": false,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
@@ -723,15 +1021,17 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 50.0,
-                            "y": 50.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 1,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
@@ -748,15 +1048,17 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 338.0,
-                            "y": 44.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 6,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 4,
+                        "locked": false,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
@@ -782,6 +1084,8 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 5,
+                        "locked": false,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
@@ -805,282 +1109,19 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Image:Background": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Text:BRB": [],
-                "libobs.hide_scene_item.Text:ComingUp": [],
-                "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.hide_scene_item.Text:Q&A": [],
-                "libobs.hide_scene_item.Text:StartingSoon": [],
-                "libobs.show_scene_item.Image:Background": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Text:BRB": [],
-                "libobs.show_scene_item.Text:ComingUp": [],
-                "libobs.show_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.show_scene_item.Text:Q&A": [],
-                "libobs.show_scene_item.Text:StartingSoon": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Intermission",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Image:Background",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 0,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Text:StartingSoon",
-                        "pos": {
-                            "x": 960.0,
-                            "y": 167.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Image:NowPlayingAlbum",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 891.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.37799999117851257,
-                            "y": 0.37799999117851257
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Text:NowPlaying (Big)",
-                        "pos": {
-                            "x": 193.0,
-                            "y": 877.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Text:ComingUp",
-                        "pos": {
-                            "x": 1233.0,
-                            "y": 426.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Text:BRB",
-                        "pos": {
-                            "x": 863.4122314453125,
-                            "y": 94.399993896484375
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.82202380895614624,
-                            "y": 0.82222223281860352
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Text:Q&A",
-                        "pos": {
-                            "x": 404.0,
-                            "y": 487.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:Q&A",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4278190080,
-                "color2": 4283256141,
-                "font": {
-                    "face": "Bebas Neue Bold",
-                    "flags": 1,
-                    "size": 100,
-                    "style": ""
-                },
-                "text": "Q&A in chat"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Crop/Pad",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "bottom": 40
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
             "hotkeys": {},
             "id": "monitor_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Monitor 0",
+            "name": "Monitor 1",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {},
+            "settings": {
+                "monitor": 1
+            },
             "sync": 0,
             "volume": 1.0
         }

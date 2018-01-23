@@ -7,40 +7,22 @@
             {
                 "deinterlace_field_order": 0,
                 "deinterlace_mode": 0,
-                "enabled": false,
+                "enabled": true,
                 "flags": 0,
                 "hotkeys": {},
                 "id": "noise_suppress_filter",
-                "mixers": 0,
+                "mixers": 255,
                 "monitoring_type": 0,
                 "muted": false,
                 "name": "Noise Suppression",
+                "private_settings": {},
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
                 "push-to-talk": false,
                 "push-to-talk-delay": 0,
                 "settings": {
-                    "suppress_level": -25
+                    "suppress_level": -20
                 },
-                "sync": 0,
-                "volume": 1.0
-            },
-            {
-                "deinterlace_field_order": 0,
-                "deinterlace_mode": 0,
-                "enabled": false,
-                "flags": 0,
-                "hotkeys": {},
-                "id": "noise_gate_filter",
-                "mixers": 255,
-                "monitoring_type": 0,
-                "muted": false,
-                "name": "Noise Gate",
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "settings": {},
                 "sync": 0,
                 "volume": 1.0
             }
@@ -57,12 +39,13 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.1.00000000}.{1e2fb144-cdc5-45ea-90c0-03b33864cefd}"
+            "device_id": "{0.0.1.00000000}.{96a23742-5fc1-4c6c-b477-90fa746cce8a}"
         },
         "sync": 0,
         "volume": 1.0
@@ -79,23 +62,24 @@
             "libobs.unmute": []
         },
         "id": "wasapi_output_capture",
-        "mixers": 63,
+        "mixers": 255,
         "monitoring_type": 0,
         "muted": true,
         "name": "Desktop Audio",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "default"
+            "device_id": "{0.0.0.00000000}.{4ebe4915-d096-4b26-b38f-c0e54232ef0e}"
         },
         "sync": 0,
-        "volume": 0.421875
+        "volume": 1.0
     },
     "current_program_scene": "Stream (16:9)",
     "current_scene": "Stream (16:9)",
-    "current_transition": "Fade",
+    "current_transition": "Logo Slice",
     "modules": {
         "auto-scene-switcher": {
             "active": false,
@@ -107,6 +91,7 @@
         "captions": {
             "enabled": false,
             "lang_id": 1033,
+            "provider": "mssapi",
             "source": ""
         },
         "output-timer": {
@@ -118,11 +103,57 @@
             "streamTimerHours": 0,
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
-        }
+        },
+        "scripts-tool": []
     },
     "name": "HD Console Speedrun",
     "preview_locked": false,
-    "quick_transitions": [],
+    "quick_transitions": [
+        {
+            "duration": 300,
+            "hotkeys": [],
+            "id": 1,
+            "name": "Cut"
+        },
+        {
+            "duration": 300,
+            "hotkeys": [],
+            "id": 2,
+            "name": "Logo Slice"
+        }
+    ],
+    "saved_multiview_projectors": [
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        },
+        {
+            "saved_multiview_projectors": 0
+        }
+    ],
     "saved_preview_projectors": [
         {
             "saved_preview_projectors": 0
@@ -187,6 +218,38 @@
             "saved_projectors": ""
         }
     ],
+    "saved_studio_preview_projectors": [
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        },
+        {
+            "saved_studio_preview_projectors": 0
+        }
+    ],
     "scaling_enabled": false,
     "scaling_level": 0,
     "scaling_off_x": 0.0,
@@ -202,13 +265,16 @@
             "name": "Stream (16:9)"
         },
         {
-            "name": "Stream (16:9) (No Splits)"
+            "name": "Stream (16:9) (No splits)"
+        },
+        {
+            "name": "Stream (16:9) (No cam)"
         },
         {
             "name": "Stream (4:3)"
         },
         {
-            "name": "Full Game"
+            "name": "Game Only"
         },
         {
             "name": "Full Cam"
@@ -224,11 +290,210 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Sub Goal Progress Bar (Horizontal)",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "fps": 60,
+                "height": 54,
+                "restart_when_active": false,
+                "shutdown": true,
+                "url": "http://localhost:3000/components/progress_bar/subgoal?goal=100&dir=horizontal",
+                "width": 284
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "color_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Temp",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color": 4281143555,
+                "height": 1080,
+                "width": 1920
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Hob Splash Video",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "local_file": "D:/Videos/Overlay backgrounds/Hob - Launch Trailer.mp4",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "NowPlaying Text",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "align": "right",
+                "bk_opacity": 0,
+                "color": 16382457,
+                "extents": false,
+                "file": "D:/Documents/unp/unp_now_playing.txt",
+                "font": {
+                    "face": "Bebas Neue Book",
+                    "flags": 1,
+                    "size": 128,
+                    "style": ""
+                },
+                "read_from_file": true,
+                "valign": "center"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "TEMPORARY",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "fps": 60,
+                "height": 700,
+                "restart_when_active": false,
+                "shutdown": true,
+                "url": "localhost:3000/components/bits/boxes",
+                "width": 426
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Console Game Feed": [],
+                "libobs.show_scene_item.Console Game Feed": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Game Only",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 8,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Console Game Feed",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
             "id": "text_gdiplus",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Sub Goal Label",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -242,7 +507,7 @@
                 "font": {
                     "face": "Bebas Kai",
                     "flags": 0,
-                    "size": 36,
+                    "size": 54,
                     "style": ""
                 },
                 "text": "!subgoal",
@@ -263,6 +528,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Layout (No Splits)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -281,38 +547,75 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.BRB": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Console Game Feed": [],
                 "libobs.hide_scene_item.Layout (No Splits)": [],
+                "libobs.hide_scene_item.NowPlaying Album Art": [],
                 "libobs.hide_scene_item.NowPlaying Label": [],
+                "libobs.hide_scene_item.NowPlaying Song Info": [],
+                "libobs.hide_scene_item.PC Game Capture": [],
+                "libobs.hide_scene_item.Scrolling Information": [],
                 "libobs.hide_scene_item.StreamLabs Alerts": [],
+                "libobs.hide_scene_item.Sub Goal Label": [],
                 "libobs.hide_scene_item.Sub Goal Progress Bar": [],
-                "libobs.hide_scene_item.Text:NowPlaying": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
+                "libobs.hide_scene_item.Timer:Splitless": [],
+                "libobs.hide_scene_item.Webcam": [],
+                "libobs.hide_scene_item.Window Capture 2": [],
                 "libobs.show_scene_item.BRB": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.show_scene_item.Console Game Feed": [],
                 "libobs.show_scene_item.Layout (No Splits)": [],
+                "libobs.show_scene_item.NowPlaying Album Art": [],
                 "libobs.show_scene_item.NowPlaying Label": [],
+                "libobs.show_scene_item.NowPlaying Song Info": [],
+                "libobs.show_scene_item.PC Game Capture": [],
+                "libobs.show_scene_item.Scrolling Information": [],
                 "libobs.show_scene_item.StreamLabs Alerts": [],
+                "libobs.show_scene_item.Sub Goal Label": [],
                 "libobs.show_scene_item.Sub Goal Progress Bar": [],
-                "libobs.show_scene_item.Text:NowPlaying": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Video:Webcam": []
+                "libobs.show_scene_item.Timer:Splitless": [],
+                "libobs.show_scene_item.Webcam": [],
+                "libobs.show_scene_item.Window Capture 2": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Stream (16:9) (No Splits)",
+            "name": "Stream (16:9) (No splits)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 15,
+                "id_counter": 27,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 21,
+                        "locked": false,
+                        "name": "PC Game Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
                     {
                         "align": 10,
                         "bounds": {
@@ -327,11 +630,40 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": true,
-                        "name": "Game Feed",
+                        "name": "Console Game Feed",
                         "pos": {
                             "x": 1920.0,
                             "y": 1080.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.4700162410736084,
+                            "y": 1.4696530103683472
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 10,
+                        "bounds": {
+                            "x": 1809.0,
+                            "y": 1018.0
+                        },
+                        "bounds_align": 10,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 26,
+                        "locked": false,
+                        "name": "Window Capture 2",
+                        "pos": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.4700162410736084,
@@ -354,14 +686,15 @@
                         "crop_top": 0,
                         "id": 2,
                         "locked": true,
-                        "name": "Video:Webcam",
+                        "name": "Webcam",
                         "pos": {
-                            "x": 268.65625,
+                            "x": 5.0,
                             "y": 326.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -0.22343750298023224,
+                            "x": 0.22343750298023224,
                             "y": 0.22361111640930176
                         },
                         "scale_filter": "disable",
@@ -386,6 +719,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -408,11 +742,12 @@
                         "crop_top": 0,
                         "id": 6,
                         "locked": true,
-                        "name": "Image:NowPlayingAlbum",
+                        "name": "NowPlaying Album Art",
                         "pos": {
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
@@ -435,11 +770,12 @@
                         "crop_top": 0,
                         "id": 7,
                         "locked": true,
-                        "name": "Text:NowPlaying",
+                        "name": "NowPlaying Song Info",
                         "pos": {
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -467,6 +803,7 @@
                             "x": 5.0,
                             "y": 14.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -489,11 +826,40 @@
                         "crop_top": 0,
                         "id": 9,
                         "locked": true,
-                        "name": "Text:Scrolling",
+                        "name": "Scrolling Information",
                         "pos": {
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 9,
+                        "bounds": {
+                            "x": 112.0,
+                            "y": 168.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 6,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 10,
+                        "locked": false,
+                        "name": "Sub Goal Progress Bar",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 1069.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -514,20 +880,49 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 10,
+                        "id": 16,
                         "locked": false,
-                        "name": "Sub Goal Progress Bar",
+                        "name": "Sub Goal Label",
                         "pos": {
-                            "x": 165.0,
-                            "y": 8.0
+                            "x": 10.0,
+                            "y": 858.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.66666668653488159,
+                            "y": 0.66666668653488159
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 500.0,
+                            "y": 62.0
+                        },
+                        "bounds_align": 1,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 14,
+                        "locked": false,
+                        "name": "StreamLabs Alerts",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 72.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -545,13 +940,14 @@
                         "locked": false,
                         "name": "BRB",
                         "pos": {
-                            "x": 524.0,
-                            "y": 1013.0
+                            "x": 558.966064453125,
+                            "y": 92.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.51623034477233887,
-                            "y": 0.51538461446762085
+                            "x": 0.75953388214111328,
+                            "y": 0.75939851999282837
                         },
                         "scale_filter": "disable",
                         "visible": false
@@ -559,29 +955,30 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 500.0,
-                            "y": 62.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
-                        "bounds_align": 1,
-                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 14,
-                        "locked": true,
-                        "name": "StreamLabs Alerts",
+                        "id": 27,
+                        "locked": false,
+                        "name": "Timer:Splitless",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 21.0,
+                            "y": 326.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     }
                 ]
             },
@@ -599,6 +996,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StreamLabs Alerts",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -606,11 +1004,11 @@
             "settings": {
                 "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
                 "fps": 60,
-                "height": 70,
+                "height": 84,
                 "restart_when_active": true,
                 "shutdown": true,
                 "url": "https://streamlabs.com/alert-box/v3/CC4A178E3DAA9256A3C2",
-                "width": 559
+                "width": 573
             },
             "sync": 0,
             "volume": 1.0
@@ -626,6 +1024,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "BRB",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -639,45 +1038,8 @@
                 },
                 "outline": true,
                 "outline_color": 0,
-                "text": "Getting some food then more runs or plat relics"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "FollowerGoal Label",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "align": "center",
-                "bk_opacity": 0,
-                "color": 15856113,
-                "extents": false,
-                "extents_cx": 96,
-                "extents_cy": 69,
-                "font": {
-                    "face": "Bebas Neue Bold",
-                    "flags": 1,
-                    "size": 36,
-                    "style": ""
-                },
-                "opacity": 100,
-                "outline": false,
-                "outline_color": 0,
-                "outline_size": 1,
-                "text": "Follower Goal",
-                "valign": "bottom"
+                "outline_size": 10,
+                "text": "Quick food break"
             },
             "sync": 0,
             "volume": 1.0
@@ -693,6 +1055,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background:End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -715,6 +1078,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:temp todo",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -736,6 +1100,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -770,12 +1135,12 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Background:End": [],
-                "libobs.hide_scene_item.Game Capture": [],
+                "libobs.hide_scene_item.PC Game Capture": [],
                 "libobs.hide_scene_item.Text:End": [],
                 "libobs.hide_scene_item.Text:Q&A": [],
                 "libobs.hide_scene_item.Text:temp todo": [],
                 "libobs.show_scene_item.Background:End": [],
-                "libobs.show_scene_item.Game Capture": [],
+                "libobs.show_scene_item.PC Game Capture": [],
                 "libobs.show_scene_item.Text:End": [],
                 "libobs.show_scene_item.Text:Q&A": [],
                 "libobs.show_scene_item.Text:temp todo": []
@@ -785,6 +1150,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -811,6 +1177,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -838,6 +1205,7 @@
                             "x": 404.0,
                             "y": 487.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -865,6 +1233,7 @@
                             "x": 280.0,
                             "y": 27.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -887,11 +1256,12 @@
                         "crop_top": 0,
                         "id": 4,
                         "locked": false,
-                        "name": "Game Capture",
+                        "name": "PC Game Capture",
                         "pos": {
                             "x": 954.0,
                             "y": 520.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.47968751192092896,
@@ -919,6 +1289,7 @@
                             "x": 53.0,
                             "y": 576.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 2.0679612159729004,
@@ -939,21 +1310,52 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
-                "libobs.show_scene_item.Video:Webcam": []
+                "libobs.hide_scene_item.Display Capture": [],
+                "libobs.hide_scene_item.Webcam": [],
+                "libobs.show_scene_item.Display Capture": [],
+                "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Full Cam",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 1,
+                "id_counter": 2,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Display Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 45.5
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -968,11 +1370,12 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": false,
-                        "name": "Video:Webcam",
+                        "name": "Webcam",
                         "pos": {
                             "x": 370.0,
                             "y": 180.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -997,6 +1400,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:Q&A",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1022,34 +1426,33 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Background:Splash": [],
-                "libobs.hide_scene_item.Game Capture": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.hide_scene_item.Incorrect": [],
-                "libobs.hide_scene_item.Text:ComingUp": [],
-                "libobs.hide_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.hide_scene_item.Text:StartingSoon": [],
-                "libobs.show_scene_item.Background:Splash": [],
-                "libobs.show_scene_item.Game Capture": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
-                "libobs.show_scene_item.Incorrect": [],
-                "libobs.show_scene_item.Text:ComingUp": [],
-                "libobs.show_scene_item.Text:NowPlaying (Big)": [],
-                "libobs.show_scene_item.Text:StartingSoon": []
+                "libobs.hide_scene_item.Audio Output Capture": [],
+                "libobs.hide_scene_item.Crash 3 Splash Video": [],
+                "libobs.hide_scene_item.Hob Splash Video": [],
+                "libobs.hide_scene_item.NowPlaying Album Art": [],
+                "libobs.hide_scene_item.NowPlaying Text": [],
+                "libobs.hide_scene_item.Splash Overlay": [],
+                "libobs.hide_scene_item.Temp": [],
+                "libobs.show_scene_item.Audio Output Capture": [],
+                "libobs.show_scene_item.Crash 3 Splash Video": [],
+                "libobs.show_scene_item.Hob Splash Video": [],
+                "libobs.show_scene_item.NowPlaying Album Art": [],
+                "libobs.show_scene_item.NowPlaying Text": [],
+                "libobs.show_scene_item.Splash Overlay": [],
+                "libobs.show_scene_item.Temp": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Splash",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 8,
+                "id_counter": 15,
                 "items": [
                     {
                         "align": 5,
@@ -1063,202 +1466,14 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 1,
+                        "id": 14,
                         "locked": false,
-                        "name": "Background:Splash",
+                        "name": "Temp",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 0,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Text:StartingSoon",
-                        "pos": {
-                            "x": 959.5,
-                            "y": 152.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 300.0,
-                            "y": 200.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Image:NowPlayingAlbum",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 880.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.37799999117851257,
-                            "y": 0.37799999117851257
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 4,
-                        "locked": false,
-                        "name": "Text:NowPlaying (Big)",
-                        "pos": {
-                            "x": 310.0,
-                            "y": 872.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 5,
-                        "locked": false,
-                        "name": "Text:ComingUp",
-                        "pos": {
-                            "x": 1007.76123046875,
-                            "y": 417.30242919921875
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.2985074520111084,
-                            "y": 1.2983870506286621
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 6,
-                        "locked": false,
-                        "name": "Game Capture",
-                        "pos": {
-                            "x": 49.0,
-                            "y": 364.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.62708336114883423,
-                            "y": 0.62777775526046753
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Game Feed",
-                        "pos": {
-                            "x": 92.0,
-                            "y": 317.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.66874998807907104,
-                            "y": 0.66805553436279297
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 8,
-                        "locked": false,
-                        "name": "Incorrect",
-                        "pos": {
-                            "x": 1093.0,
-                            "y": 879.0
-                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1266,6 +1481,174 @@
                         },
                         "scale_filter": "disable",
                         "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 10,
+                        "locked": false,
+                        "name": "Crash 3 Splash Video",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Hob Splash Video",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 9,
+                        "locked": false,
+                        "name": "Splash Overlay",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 6,
+                        "bounds": {
+                            "x": 240.0,
+                            "y": 135.0
+                        },
+                        "bounds_align": 2,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
+                        "name": "NowPlaying Album Art",
+                        "pos": {
+                            "x": 1910.0,
+                            "y": 10.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 6,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 11,
+                        "locked": false,
+                        "name": "NowPlaying Text",
+                        "pos": {
+                            "x": 1761.0,
+                            "y": 22.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.43319839239120483,
+                            "y": 0.43359375
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 15,
+                        "locked": false,
+                        "name": "Audio Output Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -1280,43 +1663,48 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.BRB": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.Image:Layout": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Console Game Feed": [],
+                "libobs.hide_scene_item.LiveSplit Graph": [],
+                "libobs.hide_scene_item.LiveSplit Splits": [],
+                "libobs.hide_scene_item.NowPlaying Album Art": [],
                 "libobs.hide_scene_item.NowPlaying Label": [],
+                "libobs.hide_scene_item.NowPlaying Song Info": [],
+                "libobs.hide_scene_item.Overlay": [],
+                "libobs.hide_scene_item.PC Game Capture": [],
+                "libobs.hide_scene_item.Scrolling Information": [],
                 "libobs.hide_scene_item.StreamLabs Alerts": [],
                 "libobs.hide_scene_item.Sub Goal Label": [],
                 "libobs.hide_scene_item.Sub Goal Progress Bar": [],
-                "libobs.hide_scene_item.Text:NowPlaying": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.hide_scene_item.Timer:Graph": [],
-                "libobs.hide_scene_item.Timer:Splits": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
+                "libobs.hide_scene_item.TEMPORARY": [],
+                "libobs.hide_scene_item.Webcam": [],
                 "libobs.show_scene_item.BRB": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.Image:Layout": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.show_scene_item.Console Game Feed": [],
+                "libobs.show_scene_item.LiveSplit Graph": [],
+                "libobs.show_scene_item.LiveSplit Splits": [],
+                "libobs.show_scene_item.NowPlaying Album Art": [],
                 "libobs.show_scene_item.NowPlaying Label": [],
+                "libobs.show_scene_item.NowPlaying Song Info": [],
+                "libobs.show_scene_item.Overlay": [],
+                "libobs.show_scene_item.PC Game Capture": [],
+                "libobs.show_scene_item.Scrolling Information": [],
                 "libobs.show_scene_item.StreamLabs Alerts": [],
                 "libobs.show_scene_item.Sub Goal Label": [],
                 "libobs.show_scene_item.Sub Goal Progress Bar": [],
-                "libobs.show_scene_item.Text:NowPlaying": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Timer:Graph": [],
-                "libobs.show_scene_item.Timer:Splits": [],
-                "libobs.show_scene_item.Video:Webcam": []
+                "libobs.show_scene_item.TEMPORARY": [],
+                "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Stream (16:9)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 16,
+                "id_counter": 38,
                 "items": [
                     {
                         "align": 10,
@@ -1324,7 +1712,7 @@
                             "x": 1809.0,
                             "y": 1018.0
                         },
-                        "bounds_align": 10,
+                        "bounds_align": 0,
                         "bounds_type": 2,
                         "crop_bottom": 0,
                         "crop_left": 0,
@@ -1332,15 +1720,44 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": true,
-                        "name": "Game Feed",
+                        "name": "Console Game Feed",
                         "pos": {
                             "x": 1920.0,
                             "y": 1080.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.4700162410736084,
-                            "y": 1.4696530103683472
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 10,
+                        "bounds": {
+                            "x": 1809.0,
+                            "y": 1018.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 38,
+                        "locked": true,
+                        "name": "PC Game Capture",
+                        "pos": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1359,14 +1776,15 @@
                         "crop_top": 0,
                         "id": 2,
                         "locked": true,
-                        "name": "Video:Webcam",
+                        "name": "Webcam",
                         "pos": {
-                            "x": 268.65625,
+                            "x": 5.0,
                             "y": 326.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -0.22343750298023224,
+                            "x": 0.22343750298023224,
                             "y": 0.22361111640930176
                         },
                         "scale_filter": "disable",
@@ -1386,11 +1804,12 @@
                         "crop_top": 0,
                         "id": 3,
                         "locked": true,
-                        "name": "Timer:Graph",
+                        "name": "LiveSplit Graph",
                         "pos": {
                             "x": 11.0,
                             "y": 73.0
                         },
+                        "private_settings": {},
                         "rot": 90.0,
                         "scale": {
                             "x": 0.75,
@@ -1413,11 +1832,12 @@
                         "crop_top": 0,
                         "id": 4,
                         "locked": true,
-                        "name": "Image:Layout",
+                        "name": "Overlay",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1440,11 +1860,12 @@
                         "crop_top": 0,
                         "id": 5,
                         "locked": true,
-                        "name": "Timer:Splits",
+                        "name": "LiveSplit Splits",
                         "pos": {
                             "x": 6.0,
                             "y": 492.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.80937498807907104,
@@ -1467,11 +1888,12 @@
                         "crop_top": 0,
                         "id": 6,
                         "locked": true,
-                        "name": "Image:NowPlayingAlbum",
+                        "name": "NowPlaying Album Art",
                         "pos": {
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
@@ -1494,11 +1916,12 @@
                         "crop_top": 0,
                         "id": 7,
                         "locked": true,
-                        "name": "Text:NowPlaying",
+                        "name": "NowPlaying Song Info",
                         "pos": {
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1526,6 +1949,7 @@
                             "x": 5.0,
                             "y": 14.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1548,11 +1972,12 @@
                         "crop_top": 0,
                         "id": 9,
                         "locked": true,
-                        "name": "Text:Scrolling",
+                        "name": "Scrolling Information",
                         "pos": {
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1580,10 +2005,39 @@
                             "x": 0.0,
                             "y": 1069.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 16,
+                        "locked": true,
+                        "name": "Sub Goal Label",
+                        "pos": {
+                            "x": 10.0,
+                            "y": 858.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.66666668653488159,
+                            "y": 0.66666668653488159
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1600,20 +2054,21 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "id": 16,
-                        "locked": true,
-                        "name": "Sub Goal Label",
+                        "id": 18,
+                        "locked": false,
+                        "name": "TEMPORARY",
                         "pos": {
-                            "x": 10.0,
-                            "y": 858.0
+                            "x": 0.0,
+                            "y": 62.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.36619716882705688,
+                            "y": 0.36714285612106323
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1621,8 +2076,8 @@
                             "x": 500.0,
                             "y": 62.0
                         },
-                        "bounds_align": 1,
-                        "bounds_type": 2,
+                        "bounds_align": 5,
+                        "bounds_type": 6,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
@@ -1632,8 +2087,9 @@
                         "name": "StreamLabs Alerts",
                         "pos": {
                             "x": 0.0,
-                            "y": 62.0
+                            "y": 72.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1658,9 +2114,10 @@
                         "locked": false,
                         "name": "BRB",
                         "pos": {
-                            "x": 307.0,
-                            "y": 885.0
+                            "x": 777.36541748046875,
+                            "y": 90.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.80011260509490967,
@@ -1687,6 +2144,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Black Screen",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1714,12 +2172,14 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
                     "push-to-talk-delay": 0,
                     "settings": {
-                        "right": 100
+                        "left": 50,
+                        "right": 50
                     },
                     "sync": 0,
                     "volume": 1.0
@@ -1736,7 +2196,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Video:Webcam",
+            "name": "Webcam",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1764,7 +2225,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image:Layout",
+            "name": "Overlay",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1792,6 +2254,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1810,7 +2273,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Timer:Graph",
+            "name": "LiveSplit Graph",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1838,6 +2302,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1855,7 +2320,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Timer:Splits",
+            "name": "LiveSplit Splits",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1877,48 +2343,14 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image:NowPlayingAlbum",
+            "name": "NowPlaying Album Art",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
                 "file": "D:/Documents/unp/unp_album_art.jpg"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:NowPlaying (Big)",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4294638330,
-                "color2": 4294638330,
-                "custom_width": 0,
-                "drop_shadow": true,
-                "font": {
-                    "face": "Bebas Neue Book",
-                    "flags": 0,
-                    "size": 120,
-                    "style": ""
-                },
-                "from_file": true,
-                "outline": true,
-                "text": "",
-                "text_file": "D:/Documents/unp/unp_now_playing.txt",
-                "word_wrap": false
             },
             "sync": 0,
             "volume": 1.0
@@ -1939,6 +2371,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Scroll",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1960,7 +2393,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Text:Scrolling",
+            "name": "Scrolling Information",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1975,7 +2409,7 @@
                     "size": 28,
                     "style": ""
                 },
-                "text": "           ~          I hope you all like the newly customized sub/bit alerts as well as the subgoal bar! | Thank you so much for all the support lately folks. I deeply appreciate it. <3 | I'm planning on offering extra benefits for subscribers soon, so keep an eye out!",
+                "text": "           ~          Hello friends, new and old! Be prepared for this layout to see some changes in the future! | Current incentive backlog: All Missions (880 Moons) \"speedrun\" of Super Mario Odyssey",
                 "word_wrap": false
             },
             "sync": 0,
@@ -1987,64 +2421,12 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Background:Splash",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "J:/Pictures/Stream Layout/oristartsplash.jpg",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
             "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Text:StartingSoon",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4294638330,
-                "color2": 4294638330,
-                "drop_shadow": true,
-                "font": {
-                    "face": "Bebas Neue Light",
-                    "flags": 0,
-                    "size": 200,
-                    "style": ""
-                },
-                "outline": true,
-                "text": "Switching gears"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:NowPlaying",
+            "name": "NowPlaying Song Info",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2059,40 +2441,9 @@
                     "size": 22,
                     "style": ""
                 },
-                "from_file": true,
-                "text": "",
+                "from_file": false,
+                "text": "Music information is broken =(",
                 "text_file": "D:/Documents/unp/unp_now_playing.txt"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Text:ComingUp",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4294638330,
-                "color2": 4294638330,
-                "drop_shadow": false,
-                "font": {
-                    "face": "Bebas Neue Book",
-                    "flags": 0,
-                    "size": 72,
-                    "style": ""
-                },
-                "outline": true,
-                "text": "Coming Up:\n   Crash 3 HD\n   \"No Spin\" race vs. Zetris"
             },
             "sync": 0,
             "volume": 1.0
@@ -2104,20 +2455,26 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Audio Output Capture": [],
+                "libobs.hide_scene_item.BRB": [],
+                "libobs.hide_scene_item.Console Game Feed": [],
+                "libobs.hide_scene_item.Handcam": [],
                 "libobs.hide_scene_item.Layout (top bar only)": [],
+                "libobs.hide_scene_item.NowPlaying Album Art": [],
+                "libobs.hide_scene_item.NowPlaying Song Info": [],
+                "libobs.hide_scene_item.Scrolling Information": [],
                 "libobs.hide_scene_item.StreamLabs Alerts": [],
-                "libobs.hide_scene_item.Text:NowPlaying": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
                 "libobs.hide_scene_item.Timer:Splitless": [],
                 "libobs.hide_scene_item.Timer:Transparent": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.show_scene_item.Audio Output Capture": [],
+                "libobs.show_scene_item.BRB": [],
+                "libobs.show_scene_item.Console Game Feed": [],
+                "libobs.show_scene_item.Handcam": [],
                 "libobs.show_scene_item.Layout (top bar only)": [],
+                "libobs.show_scene_item.NowPlaying Album Art": [],
+                "libobs.show_scene_item.NowPlaying Song Info": [],
+                "libobs.show_scene_item.Scrolling Information": [],
                 "libobs.show_scene_item.StreamLabs Alerts": [],
-                "libobs.show_scene_item.Text:NowPlaying": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
                 "libobs.show_scene_item.Timer:Splitless": [],
                 "libobs.show_scene_item.Timer:Transparent": []
             },
@@ -2125,13 +2482,14 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Full Game",
+            "name": "Stream (16:9) (No cam)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 8,
+                "id_counter": 14,
                 "items": [
                     {
                         "align": 5,
@@ -2147,11 +2505,12 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": false,
-                        "name": "Game Feed",
+                        "name": "Console Game Feed",
                         "pos": {
                             "x": 0.0,
                             "y": 30.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.5,
@@ -2179,6 +2538,7 @@
                             "x": 0.0,
                             "y": 221.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2206,6 +2566,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2228,18 +2589,19 @@
                         "crop_top": 0,
                         "id": 4,
                         "locked": false,
-                        "name": "Image:NowPlayingAlbum",
+                        "name": "NowPlaying Album Art",
                         "pos": {
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
                             "y": 0.10599999874830246
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -2255,11 +2617,12 @@
                         "crop_top": 0,
                         "id": 5,
                         "locked": false,
-                        "name": "Text:NowPlaying",
+                        "name": "NowPlaying Song Info",
                         "pos": {
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2282,11 +2645,12 @@
                         "crop_top": 0,
                         "id": 6,
                         "locked": false,
-                        "name": "Text:Scrolling",
+                        "name": "Scrolling Information",
                         "pos": {
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2311,9 +2675,10 @@
                         "locked": false,
                         "name": "Timer:Splitless",
                         "pos": {
-                            "x": 0.0,
-                            "y": 1005.0
+                            "x": 1532.0,
+                            "y": 74.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.5,
@@ -2339,8 +2704,93 @@
                         "name": "StreamLabs Alerts",
                         "pos": {
                             "x": 0.0,
+                            "y": 72.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
                             "y": 0.0
                         },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 9,
+                        "locked": false,
+                        "name": "BRB",
+                        "pos": {
+                            "x": 748.0,
+                            "y": 96.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 13,
+                        "locked": false,
+                        "name": "Handcam",
+                        "pos": {
+                            "x": 271.0,
+                            "y": 1080.0
+                        },
+                        "private_settings": {},
+                        "rot": 180.0,
+                        "scale": {
+                            "x": 0.42343750596046448,
+                            "y": 0.42291668057441711
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 14,
+                        "locked": false,
+                        "name": "Audio Output Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2370,6 +2820,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2392,6 +2843,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Blue",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2412,6 +2864,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Splitless",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2439,6 +2892,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2460,6 +2914,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2484,6 +2939,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key2",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2507,6 +2963,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key3",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2526,6 +2983,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Transparent",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2550,7 +3008,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Game Capture",
+            "name": "PC Game Capture",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2574,6 +3033,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Sub Goal Progress Bar",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2583,7 +3043,7 @@
                 "height": 244,
                 "restart_when_active": true,
                 "shutdown": true,
-                "url": "http://localhost:3000/components/progress_bar/subgoal?goal=100&dir=vertical",
+                "url": "http://localhost:3000/components/progress_bar/subgoal?goal=150dir=vertical",
                 "width": 79
             },
             "sync": 0,
@@ -2600,6 +3060,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "NowPlaying Label",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2630,6 +3091,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Layout (top bar only)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2637,41 +3099,6 @@
             "settings": {
                 "file": "D:/Pictures/Stream Layout/Inkscape/overlay_top_bar_only.png",
                 "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "FollowerGoal",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "align": "center",
-                "color": 15856113,
-                "extents": false,
-                "extents_cx": 110,
-                "extents_cy": 96,
-                "extents_wrap": true,
-                "font": {
-                    "face": "Bebas Neue Book",
-                    "flags": 0,
-                    "size": 48,
-                    "style": ""
-                },
-                "opacity": 100,
-                "text": "Dark Souls 3",
-                "valign": "center"
             },
             "sync": 0,
             "volume": 1.0
@@ -2692,6 +3119,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop: SMG",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2716,6 +3144,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop: FFTA",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2739,12 +3168,14 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Game Feed",
+            "name": "Console Game Feed",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "active": true,
                 "color_space": "default",
                 "frame_interval": 166666,
                 "last_resolution": "1280x720",
@@ -2754,7 +3185,7 @@
                 "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
             },
             "sync": 0,
-            "volume": 0.15746393799781799
+            "volume": 0.26214399933815002
         },
         {
             "deinterlace_field_order": 0,
@@ -2763,42 +3194,43 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.FollowerGoal": [],
-                "libobs.hide_scene_item.FollowerGoal Label": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Console Game Feed": [],
                 "libobs.hide_scene_item.Layout (4:3)": [],
+                "libobs.hide_scene_item.NowPlaying Album Art": [],
                 "libobs.hide_scene_item.NowPlaying Label": [],
+                "libobs.hide_scene_item.NowPlaying Song Info": [],
+                "libobs.hide_scene_item.PC Game Capture": [],
+                "libobs.hide_scene_item.Scrolling Information": [],
                 "libobs.hide_scene_item.Splits (Detailed)": [],
                 "libobs.hide_scene_item.StreamLabs Alerts": [],
-                "libobs.hide_scene_item.Sub Goal Progress Bar": [],
-                "libobs.hide_scene_item.Text:NowPlaying": [],
-                "libobs.hide_scene_item.Text:Scrolling": [],
-                "libobs.hide_scene_item.Video:Webcam": [],
-                "libobs.show_scene_item.FollowerGoal": [],
-                "libobs.show_scene_item.FollowerGoal Label": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.Image:NowPlayingAlbum": [],
+                "libobs.hide_scene_item.Sub Goal Label": [],
+                "libobs.hide_scene_item.Sub Goal Progress Bar (Horizontal)": [],
+                "libobs.hide_scene_item.Webcam": [],
+                "libobs.show_scene_item.Console Game Feed": [],
                 "libobs.show_scene_item.Layout (4:3)": [],
+                "libobs.show_scene_item.NowPlaying Album Art": [],
                 "libobs.show_scene_item.NowPlaying Label": [],
+                "libobs.show_scene_item.NowPlaying Song Info": [],
+                "libobs.show_scene_item.PC Game Capture": [],
+                "libobs.show_scene_item.Scrolling Information": [],
                 "libobs.show_scene_item.Splits (Detailed)": [],
                 "libobs.show_scene_item.StreamLabs Alerts": [],
-                "libobs.show_scene_item.Sub Goal Progress Bar": [],
-                "libobs.show_scene_item.Text:NowPlaying": [],
-                "libobs.show_scene_item.Text:Scrolling": [],
-                "libobs.show_scene_item.Video:Webcam": []
+                "libobs.show_scene_item.Sub Goal Label": [],
+                "libobs.show_scene_item.Sub Goal Progress Bar (Horizontal)": [],
+                "libobs.show_scene_item.Webcam": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "Stream (4:3)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 13,
+                "id_counter": 18,
                 "items": [
                     {
                         "align": 10,
@@ -2814,15 +3246,44 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": false,
-                        "name": "Game Feed",
+                        "name": "Console Game Feed",
                         "pos": {
                             "x": 1920.0,
                             "y": 1080.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.4700162410736084,
                             "y": 1.4696527719497681
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 197,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 18,
+                        "locked": false,
+                        "name": "PC Game Capture",
+                        "pos": {
+                            "x": 534.0,
+                            "y": 64.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.1293749809265137,
+                            "y": 1.1288888454437256
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2841,14 +3302,15 @@
                         "crop_top": 0,
                         "id": 2,
                         "locked": false,
-                        "name": "Video:Webcam",
+                        "name": "Webcam",
                         "pos": {
-                            "x": 36.0,
-                            "y": 97.0
+                            "x": 520.0,
+                            "y": 87.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.41016948223114014,
+                            "x": -0.41016948223114014,
                             "y": 0.40972220897674561
                         },
                         "scale_filter": "disable",
@@ -2873,6 +3335,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2895,11 +3358,12 @@
                         "crop_top": 0,
                         "id": 4,
                         "locked": false,
-                        "name": "Image:NowPlayingAlbum",
+                        "name": "NowPlaying Album Art",
                         "pos": {
                             "x": 120.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
@@ -2922,11 +3386,12 @@
                         "crop_top": 0,
                         "id": 5,
                         "locked": false,
-                        "name": "Text:NowPlaying",
+                        "name": "NowPlaying Song Info",
                         "pos": {
                             "x": 180.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2954,6 +3419,7 @@
                             "x": 5.0,
                             "y": 14.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2976,11 +3442,12 @@
                         "crop_top": 0,
                         "id": 7,
                         "locked": false,
-                        "name": "Text:Scrolling",
+                        "name": "Scrolling Information",
                         "pos": {
                             "x": 573.0,
                             "y": 19.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2988,87 +3455,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 8,
-                        "locked": false,
-                        "name": "Sub Goal Progress Bar",
-                        "pos": {
-                            "x": 210.0,
-                            "y": 5.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 140.0,
-                            "y": 32.0
-                        },
-                        "bounds_align": 8,
-                        "bounds_type": 6,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 9,
-                        "locked": false,
-                        "name": "FollowerGoal Label",
-                        "pos": {
-                            "x": 35.0,
-                            "y": 2.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 140.0,
-                            "y": 32.0
-                        },
-                        "bounds_align": 4,
-                        "bounds_type": 6,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 10,
-                        "locked": false,
-                        "name": "FollowerGoal",
-                        "pos": {
-                            "x": 40.0,
-                            "y": 30.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
                     },
                     {
                         "align": 5,
@@ -3086,9 +3472,10 @@
                         "locked": false,
                         "name": "Splits (Detailed)",
                         "pos": {
-                            "x": 36.0,
-                            "y": 391.0
+                            "x": 37.0,
+                            "y": 382.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -3103,8 +3490,8 @@
                             "x": 500.0,
                             "y": 62.0
                         },
-                        "bounds_align": 1,
-                        "bounds_type": 2,
+                        "bounds_align": 5,
+                        "bounds_type": 6,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
@@ -3114,8 +3501,65 @@
                         "name": "StreamLabs Alerts",
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": 72.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 2,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 15,
+                        "locked": false,
+                        "name": "Sub Goal Progress Bar (Horizontal)",
+                        "pos": {
+                            "x": 498.0,
+                            "y": 1037.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 1,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 16,
+                        "locked": false,
+                        "name": "Sub Goal Label",
+                        "pos": {
+                            "x": 56.0,
+                            "y": 1037.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -3140,6 +3584,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Layout (4:3)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -3161,6 +3606,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Splits (Detailed)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -3178,23 +3624,175 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "text_gdiplus",
+            "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Incorrect",
+            "name": "Splash Overlay",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "font": {
-                    "face": "Bebas Neue Book",
+                "fps": 60,
+                "height": 1080,
+                "restart_when_active": true,
+                "shutdown": true,
+                "url": "localhost:3000/overlays/splash",
+                "width": 1920
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Crash 3 Splash Video",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "local_file": "D:/Videos/Overlay backgrounds/Crash 3 NST.mp4",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Handcam",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "deactivate_when_not_showing": true,
+                "last_video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&33c3e404&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "video_device_id": "Logitech HD Pro Webcam C920:\\\\?\\usb#22vid_046d&pid_082d&mi_00#226&33c3e404&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "wasapi_output_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Audio Output Capture",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Window Capture 2",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "window": "AGDQ 2018 FULL MARATHON (Chronological Playlist) - YouTube - YouTube - Mozilla Firefox:MozillaWindowClass:firefox.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
                     "flags": 0,
-                    "size": 72,
-                    "style": ""
-                },
-                "text": "<- Incorrect because blame\n<- pandora's new format"
+                    "hotkeys": {},
+                    "id": "crop_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Crop/Pad",
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "top": 91
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "monitor_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Display Capture",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "monitor": 1
             },
             "sync": 0,
             "volume": 1.0
@@ -3206,6 +3804,15 @@
             "id": "swipe_transition",
             "name": "Swipe",
             "settings": {}
+        },
+        {
+            "id": "obs_stinger_transition",
+            "name": "Logo Slice",
+            "settings": {
+                "path": "D:/Videos/jhobzstingertransition.webm",
+                "tp_type": 1,
+                "transition_point": 45
+            }
         }
     ]
 }

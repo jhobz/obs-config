@@ -1,4 +1,30 @@
 {
+    "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
+        "enabled": true,
+        "flags": 0,
+        "hotkeys": {
+            "libobs.mute": [],
+            "libobs.push-to-mute": [],
+            "libobs.push-to-talk": [],
+            "libobs.unmute": []
+        },
+        "id": "wasapi_input_capture",
+        "mixers": 255,
+        "monitoring_type": 0,
+        "muted": false,
+        "name": "Mic/Aux",
+        "push-to-mute": false,
+        "push-to-mute-delay": 0,
+        "push-to-talk": false,
+        "push-to-talk-delay": 0,
+        "settings": {
+            "device_id": "{0.0.1.00000000}.{1e2fb144-cdc5-45ea-90c0-03b33864cefd}"
+        },
+        "sync": 0,
+        "volume": 1.0
+    },
     "current_program_scene": "Scene",
     "current_scene": "Scene",
     "current_transition": "Fade",
@@ -9,6 +35,11 @@
             "non_matching_scene": "",
             "switch_if_not_matching": false,
             "switches": []
+        },
+        "captions": {
+            "enabled": false,
+            "lang_id": 1033,
+            "source": ""
         },
         "output-timer": {
             "autoStartRecordTimer": false,
@@ -21,19 +52,27 @@
             "streamTimerSeconds": 0
         }
     },
-    "name": "zFROKATHON",
+    "name": "GDQ",
     "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 300,
-            "hotkeys": [],
-            "id": 1,
+            "hotkeys": [
+                {
+                    "key": "OBS_KEY_F8"
+                }
+            ],
+            "id": 2,
             "name": "Cut"
         },
         {
             "duration": 300,
-            "hotkeys": [],
-            "id": 2,
+            "hotkeys": [
+                {
+                    "key": "OBS_KEY_F8"
+                }
+            ],
+            "id": 3,
             "name": "Fade"
         }
     ],
@@ -101,7 +140,10 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Scene"
@@ -112,32 +154,6 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Crop/Pad",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "bottom": 391,
-                        "left": 18,
-                        "right": 18,
-                        "top": 139
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
             "flags": 0,
             "hotkeys": {},
             "id": "window_capture",
@@ -151,7 +167,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "cursor": false,
-                "window": "OBS 18.0.1 (64bit, windows) - Profile#3A zFROKATHON - Scenes#3A HD Console Speedrun:Qt5QWindowIcon:obs64.exe"
+                "window": "crash3pbstream.mp4 - VLC media player:QWidget:vlc.exe"
             },
             "sync": 0,
             "volume": 1.0
@@ -176,6 +192,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -189,6 +206,8 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
                         "name": "Window Capture",
                         "pos": {
                             "x": 0.0,
@@ -196,8 +215,8 @@
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 2.0845987796783447,
-                            "y": 2.084942102432251
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true

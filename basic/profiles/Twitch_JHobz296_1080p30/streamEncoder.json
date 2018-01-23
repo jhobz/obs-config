@@ -1,5 +1,7 @@
 {
-    "bitrate": 1250,
+    "bitrate": 4500,
+    "keyint_sec": 2,
+    "preset": "faster",
     "profile": "main",
     "rate_control": "CBR",
     "use_bufsize": false

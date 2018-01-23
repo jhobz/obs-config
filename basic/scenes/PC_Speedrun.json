@@ -15,6 +15,7 @@
                 "monitoring_type": 0,
                 "muted": false,
                 "name": "Noise Suppression",
+                "private_settings": {},
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
                 "push-to-talk": false,
@@ -38,12 +39,13 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.1.00000000}.{0e2c457a-a019-45da-8ca1-68ee527cdb12}"
+            "device_id": "{0.0.1.00000000}.{96a23742-5fc1-4c6c-b477-90fa746cce8a}"
         },
         "sync": 0,
         "volume": 1.0
@@ -64,6 +66,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "Desktop Audio",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -88,6 +91,7 @@
         "captions": {
             "enabled": false,
             "lang_id": 1033,
+            "provider": "mssapi",
             "source": ""
         },
         "output-timer": {
@@ -168,7 +172,10 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Splash"
@@ -212,6 +219,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Full Game",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -232,11 +240,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Game Capture",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -258,11 +268,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
+                        "locked": false,
                         "name": "Timer:Splitless",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -284,11 +296,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
+                        "locked": false,
                         "name": "Timer:Transparent",
                         "pos": {
                             "x": 0.0,
                             "y": 221.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -313,6 +327,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text (GDI+)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -342,6 +357,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "FollowerGoal Label",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -380,6 +396,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background:End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -402,6 +419,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:temp todo",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -423,6 +441,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -472,6 +491,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "End",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -492,11 +512,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Background:End",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -518,11 +540,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
+                        "locked": false,
                         "name": "Text:Q&A",
                         "pos": {
                             "x": 404.0,
                             "y": 487.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -544,11 +568,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
+                        "locked": false,
                         "name": "Text:End",
                         "pos": {
                             "x": 280.0,
                             "y": 27.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -570,11 +596,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 4,
+                        "locked": false,
                         "name": "Game Capture",
                         "pos": {
                             "x": 954.0,
                             "y": 520.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.47968751192092896,
@@ -596,11 +624,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 5,
+                        "locked": false,
                         "name": "Text:temp todo",
                         "pos": {
                             "x": 53.0,
                             "y": 576.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 2.0679612159729004,
@@ -629,6 +659,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Full Cam",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -649,11 +680,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 370.0,
                             "y": 180.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -678,6 +711,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:Q&A",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -723,6 +757,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Splash",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -743,11 +778,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Background:Splash",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -769,11 +806,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
+                        "locked": false,
                         "name": "Text:StartingSoon",
                         "pos": {
                             "x": 960.0,
                             "y": 154.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -795,11 +834,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
+                        "locked": false,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 0.0,
                             "y": 891.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.37799999117851257,
@@ -821,11 +862,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 4,
+                        "locked": false,
                         "name": "Text:NowPlaying (Big)",
                         "pos": {
                             "x": 193.0,
                             "y": 877.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -847,11 +890,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 5,
+                        "locked": false,
                         "name": "Text:ComingUp",
                         "pos": {
                             "x": 1287.76123046875,
                             "y": 336.5
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.2985074520111084,
@@ -873,11 +918,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 6,
+                        "locked": false,
                         "name": "Text:Q&A",
                         "pos": {
                             "x": 404.0,
                             "y": 487.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -899,11 +946,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 7,
+                        "locked": false,
                         "name": "Game Capture",
                         "pos": {
                             "x": 49.0,
                             "y": 364.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.62708336114883423,
@@ -931,8 +980,6 @@
                 "libobs.hide_scene_item.Image:Layout": [],
                 "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
                 "libobs.hide_scene_item.NowPlaying Label": [],
-                "libobs.hide_scene_item.REMOVELATER": [],
-                "libobs.hide_scene_item.REMOVELATER2": [],
                 "libobs.hide_scene_item.Text (GDI+)": [],
                 "libobs.hide_scene_item.Text:NowPlaying": [],
                 "libobs.hide_scene_item.Text:Scrolling": [],
@@ -946,8 +993,6 @@
                 "libobs.show_scene_item.Image:Layout": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
                 "libobs.show_scene_item.NowPlaying Label": [],
-                "libobs.show_scene_item.REMOVELATER": [],
-                "libobs.show_scene_item.REMOVELATER2": [],
                 "libobs.show_scene_item.Text (GDI+)": [],
                 "libobs.show_scene_item.Text:NowPlaying": [],
                 "libobs.show_scene_item.Text:Scrolling": [],
@@ -960,6 +1005,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Stream",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -967,58 +1013,6 @@
             "settings": {
                 "id_counter": 15,
                 "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 15,
-                        "name": "REMOVELATER2",
-                        "pos": {
-                            "x": 110.0,
-                            "y": 62.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.94270831346511841,
-                            "y": 0.94259262084960938
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 14,
-                        "name": "REMOVELATER",
-                        "pos": {
-                            "x": 7.0,
-                            "y": 493.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -1032,18 +1026,20 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Game Capture",
                         "pos": {
                             "x": 110.0,
                             "y": 62.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.94270831346511841,
                             "y": 0.94259262084960938
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     },
                     {
                         "align": 5,
@@ -1058,11 +1054,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
+                        "locked": false,
                         "name": "Video:Webcam",
                         "pos": {
                             "x": 5.0,
                             "y": 326.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.22343750298023224,
@@ -1084,11 +1082,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
+                        "locked": false,
                         "name": "Timer:Graph",
                         "pos": {
                             "x": 11.0,
                             "y": 73.0
                         },
+                        "private_settings": {},
                         "rot": 90.0,
                         "scale": {
                             "x": 0.75,
@@ -1110,11 +1110,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 4,
+                        "locked": false,
                         "name": "Image:Layout",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1136,11 +1138,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 5,
+                        "locked": false,
                         "name": "Timer:Splits",
                         "pos": {
                             "x": 6.0,
                             "y": 492.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.80937498807907104,
@@ -1162,11 +1166,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 6,
+                        "locked": false,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
@@ -1188,11 +1194,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 7,
+                        "locked": false,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1214,11 +1222,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 8,
+                        "locked": false,
                         "name": "NowPlaying Label",
                         "pos": {
                             "x": 5.0,
                             "y": 14.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1240,11 +1250,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 9,
+                        "locked": false,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1266,11 +1278,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 10,
+                        "locked": false,
                         "name": "GoalTracker",
                         "pos": {
                             "x": 210.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1292,11 +1306,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 11,
+                        "locked": false,
                         "name": "FollowerGoal Label",
                         "pos": {
                             "x": 35.0,
                             "y": 2.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1318,11 +1334,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 12,
+                        "locked": false,
                         "name": "FollowerGoal",
                         "pos": {
                             "x": 35.0,
                             "y": 30.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1344,11 +1362,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 13,
+                        "locked": false,
                         "name": "Text (GDI+)",
                         "pos": {
                             "x": 669.0,
                             "y": 217.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1375,6 +1395,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Black Screen",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1402,6 +1423,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1425,6 +1447,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "Video:Webcam",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1452,6 +1475,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Image:Layout",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1479,6 +1503,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1498,6 +1523,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Graph",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1525,6 +1551,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1543,6 +1570,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Splits",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1565,6 +1593,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Image:NowPlayingAlbum",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1586,6 +1615,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:NowPlaying (Big)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1626,6 +1656,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Scroll",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -1648,6 +1679,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:Scrolling",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1662,7 +1694,7 @@
                     "size": 28,
                     "style": ""
                 },
-                "text": "           ~          Reviewing and analyzing all of my interviews and commentary runs from SGDQ | Watching interviews once all the way through, uninterrupted, before taking a second pass where I pause and critique",
+                "text": "           ~          Trying out running Ori with keyboard and mouse. I always used to run on controller, so this is sure to be a weird process. If you have any questions about the game, feel free to ask!",
                 "word_wrap": false
             },
             "sync": 0,
@@ -1679,6 +1711,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Background:Splash",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1701,6 +1734,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:StartingSoon",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1732,6 +1766,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:NowPlaying",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1764,6 +1799,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:ComingUp",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1811,6 +1847,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Stream (No Cam)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -1831,11 +1868,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Game Capture",
                         "pos": {
                             "x": 0.0,
                             "y": 30.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1857,11 +1896,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
+                        "locked": false,
                         "name": "Timer:Splitless",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 2.1404495239257813,
@@ -1883,11 +1924,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
+                        "locked": false,
                         "name": "Timer:Transparent",
                         "pos": {
                             "x": 0.0,
                             "y": 221.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1909,11 +1952,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 4,
+                        "locked": false,
                         "name": "Layout (top bar only)",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1935,11 +1980,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 5,
+                        "locked": false,
                         "name": "Image:NowPlayingAlbum",
                         "pos": {
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
@@ -1961,11 +2008,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 6,
+                        "locked": false,
                         "name": "Text:NowPlaying",
                         "pos": {
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1987,11 +2036,13 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 7,
+                        "locked": false,
                         "name": "Text:Scrolling",
                         "pos": {
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -2021,6 +2072,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2043,6 +2095,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Blue",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2063,6 +2116,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Splitless",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2090,6 +2144,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2111,6 +2166,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2134,6 +2190,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key2",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -2153,6 +2210,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Timer:Transparent",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2178,6 +2236,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Game Capture",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2201,6 +2260,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "GoalTracker",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2225,6 +2285,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "NowPlaying Label",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2255,6 +2316,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Layout (top bar only)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2277,6 +2339,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "FollowerGoal",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -2297,75 +2360,6 @@
                 "opacity": 100,
                 "text": "Dark Souls 3",
                 "valign": "center"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Crop/Pad",
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "bottom": 27,
-                        "left": 16,
-                        "right": 4,
-                        "top": 52
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "REMOVELATER",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "cursor": false,
-                "window": "new 1 - Notepad++:Notepad++:notepad++.exe"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "REMOVELATER2",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "window": "GamesDoneQuick - Twitch - Mozilla Firefox:MozillaWindowClass:firefox.exe"
             },
             "sync": 0,
             "volume": 1.0

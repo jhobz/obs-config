@@ -1,84 +1,6 @@
 {
-    "AuxAudioDevice1": {
-        "deinterlace_field_order": 0,
-        "deinterlace_mode": 0,
-        "enabled": true,
-        "filters": [
-            {
-                "deinterlace_field_order": 0,
-                "deinterlace_mode": 0,
-                "enabled": true,
-                "flags": 0,
-                "hotkeys": {},
-                "id": "noise_suppress_filter",
-                "mixers": 15,
-                "monitoring_type": 0,
-                "muted": false,
-                "name": "Noise Suppression",
-                "private_settings": {},
-                "push-to-mute": false,
-                "push-to-mute-delay": 0,
-                "push-to-talk": false,
-                "push-to-talk-delay": 0,
-                "settings": {
-                    "suppress_level": -30
-                },
-                "sync": 0,
-                "volume": 1.0
-            }
-        ],
-        "flags": 0,
-        "hotkeys": {
-            "libobs.mute": [],
-            "libobs.push-to-mute": [],
-            "libobs.push-to-talk": [],
-            "libobs.unmute": []
-        },
-        "id": "wasapi_input_capture",
-        "mixers": 15,
-        "monitoring_type": 0,
-        "muted": false,
-        "name": "Mic/Aux",
-        "private_settings": {},
-        "push-to-mute": false,
-        "push-to-mute-delay": 0,
-        "push-to-talk": false,
-        "push-to-talk-delay": 0,
-        "settings": {
-            "device_id": "{0.0.1.00000000}.{0e2c457a-a019-45da-8ca1-68ee527cdb12}"
-        },
-        "sync": 0,
-        "volume": 1.0
-    },
-    "DesktopAudioDevice1": {
-        "deinterlace_field_order": 0,
-        "deinterlace_mode": 0,
-        "enabled": true,
-        "flags": 0,
-        "hotkeys": {
-            "libobs.mute": [],
-            "libobs.push-to-mute": [],
-            "libobs.push-to-talk": [],
-            "libobs.unmute": []
-        },
-        "id": "wasapi_output_capture",
-        "mixers": 15,
-        "monitoring_type": 0,
-        "muted": true,
-        "name": "Desktop Audio",
-        "private_settings": {},
-        "push-to-mute": false,
-        "push-to-mute-delay": 0,
-        "push-to-talk": false,
-        "push-to-talk-delay": 0,
-        "settings": {
-            "device_id": "default"
-        },
-        "sync": 0,
-        "volume": 1.0
-    },
-    "current_program_scene": "Stream",
-    "current_scene": "Stream",
+    "current_program_scene": "Scene",
+    "current_scene": "Scene",
     "current_transition": "Fade",
     "modules": {
         "auto-scene-switcher": {
@@ -105,9 +27,22 @@
             "streamTimerSeconds": 0
         }
     },
-    "name": "Ori runner",
+    "name": "zCALITHON",
     "preview_locked": false,
-    "quick_transitions": [],
+    "quick_transitions": [
+        {
+            "duration": 300,
+            "hotkeys": [],
+            "id": 1,
+            "name": "Cut"
+        },
+        {
+            "duration": 300,
+            "hotkeys": [],
+            "id": 2,
+            "name": "Fade"
+        }
+    ],
     "saved_preview_projectors": [
         {
             "saved_preview_projectors": 0
@@ -178,7 +113,7 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "Stream"
+            "name": "Scene"
         }
     ],
     "sources": [
@@ -189,70 +124,70 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Game Feed": [],
-                "libobs.hide_scene_item.LiveSplit": [],
-                "libobs.show_scene_item.Game Feed": [],
-                "libobs.show_scene_item.LiveSplit": []
+                "libobs.hide_scene_item.Video Capture Device": [],
+                "libobs.hide_scene_item.Window Capture": [],
+                "libobs.show_scene_item.Video Capture Device": [],
+                "libobs.show_scene_item.Window Capture": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Stream",
+            "name": "Scene",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 2,
+                "id_counter": 3,
                 "items": [
                     {
-                        "align": 5,
+                        "align": 10,
                         "bounds": {
-                            "x": 1831.0,
-                            "y": 1030.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 1,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Game Feed",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.95364582538604736,
-                            "y": 0.95370370149612427
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 9,
-                        "bounds": {
-                            "x": 252.0,
-                            "y": 50.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 1,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
                         "locked": false,
-                        "name": "LiveSplit",
+                        "name": "Video Capture Device",
+                        "pos": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.93906247615814209,
+                            "y": 0.93888890743255615
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Window Capture",
                         "pos": {
                             "x": 0.0,
-                            "y": 1080.0
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -274,23 +209,27 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "hotkey_start": [],
-                "hotkey_stop": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "game_capture",
-            "mixers": 0,
+            "id": "dshow_input",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Game Feed",
+            "name": "Video Capture Device",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_cursor": true,
-                "capture_mode": "window",
-                "window": "Ori And The Blind Forest#3A Definitive Edition:UnityWndClass:oriDE.exe"
+                "last_resolution": "1920x1080",
+                "last_video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}",
+                "res_type": 1,
+                "resolution": "1920x1080",
+                "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
             },
             "sync": 0,
             "volume": 1.0
@@ -305,14 +244,13 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "LiveSplit",
+            "name": "Window Capture",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "cursor": false,
                 "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:LiveSplit.exe"
             },
             "sync": 0,
@@ -320,11 +258,5 @@
         }
     ],
     "transition_duration": 300,
-    "transitions": [
-        {
-            "id": "swipe_transition",
-            "name": "Swipe",
-            "settings": {}
-        }
-    ]
+    "transitions": []
 }

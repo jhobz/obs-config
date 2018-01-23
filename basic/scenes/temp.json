@@ -1,7 +1,7 @@
 {
     "current_program_scene": "Scene",
     "current_scene": "Scene",
-    "current_transition": "Fade",
+    "current_transition": "JH logo slice",
     "modules": {
         "auto-scene-switcher": {
             "active": false,
@@ -33,7 +33,7 @@
             "duration": 300,
             "hotkeys": [],
             "id": 1,
-            "name": "Cut"
+            "name": "JH logo slice"
         },
         {
             "duration": 300,
@@ -106,10 +106,19 @@
             "saved_projectors": ""
         }
     ],
-    "scaling_mode": 0,
+    "scaling_enabled": false,
+    "scaling_level": 0,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
     "scene_order": [
         {
             "name": "Scene"
+        },
+        {
+            "name": "Black screen"
+        },
+        {
+            "name": "Scene 2"
         }
     ],
     "sources": [
@@ -119,13 +128,44 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Crash Intro Video",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "local_file": "D:/Videos/Overlay backgrounds/Crash 3 NST.mp4",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.BrowserSource": [],
+                "libobs.hide_scene_item.Crash Intro Video": [],
                 "libobs.hide_scene_item.Image": [],
-                "libobs.hide_scene_item.Media Source": [],
-                "libobs.show_scene_item.BrowserSource": [],
+                "libobs.hide_scene_item.Ori Video": [],
+                "libobs.hide_scene_item.Splash Overlay": [],
+                "libobs.show_scene_item.Crash Intro Video": [],
                 "libobs.show_scene_item.Image": [],
-                "libobs.show_scene_item.Media Source": []
+                "libobs.show_scene_item.Ori Video": [],
+                "libobs.show_scene_item.Splash Overlay": []
             },
             "id": "scene",
             "mixers": 0,
@@ -137,7 +177,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 3,
+                "id_counter": 4,
                 "items": [
                     {
                         "align": 5,
@@ -152,6 +192,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 1,
+                        "locked": false,
                         "name": "Image",
                         "pos": {
                             "x": 0.0,
@@ -178,7 +219,35 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 2,
-                        "name": "Media Source",
+                        "locked": false,
+                        "name": "Ori Video",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 4,
+                        "locked": false,
+                        "name": "Crash Intro Video",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -204,7 +273,8 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 3,
-                        "name": "BrowserSource",
+                        "locked": false,
+                        "name": "Splash Overlay",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -232,7 +302,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BrowserSource",
+            "name": "Splash Overlay",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -286,7 +356,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Media Source",
+            "name": "Ori Video",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -298,8 +368,123 @@
             },
             "sync": 0,
             "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Black screen",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 0,
+                "items": []
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Media Source 2": [],
+                "libobs.show_scene_item.Media Source 2": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Scene 2",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 1,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Media Source 2",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.5,
+                            "y": 1.5
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Media Source 2",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "local_file": "D:/Videos/YouTube/boneyard-babyt-comparison.mp4"
+            },
+            "sync": 0,
+            "volume": 1.0
         }
     ],
     "transition_duration": 300,
-    "transitions": []
+    "transitions": [
+        {
+            "id": "obs_stinger_transition",
+            "name": "JH logo slice",
+            "settings": {
+                "path": "D:/Videos/jhobzstingertransition.webm",
+                "tp_type": 1,
+                "transition_point": 45
+            }
+        }
+    ]
 }
