@@ -1,0 +1,10 @@
+{
+    "bitrate": 500,
+    "keyint_sec": 0,
+    "preset": "faster",
+    "profile": "",
+    "rate_control": "CBR",
+    "tune": "zerolatency",
+    "use_bufsize": false,
+    "x264opts": "bframes=0"
+}

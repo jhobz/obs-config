@@ -1,6 +1,0 @@
-{
-    "bitrate": 1800,
-    "profile": "main",
-    "rate_control": "CBR",
-    "use_bufsize": false
-}

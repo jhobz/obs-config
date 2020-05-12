@@ -1,5 +1,6 @@
 {
     "AuxAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -13,19 +14,21 @@
         "id": "wasapi_input_capture",
         "mixers": 15,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Mic/Aux",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.1.00000000}.{1e2fb144-cdc5-45ea-90c0-03b33864cefd}"
+            "device_id": "{0.0.1.00000000}.{7caec0fe-9540-495d-9f8a-05f39e5de16f}"
         },
         "sync": 0,
-        "volume": 1.0
+        "volume": 0.10382301360368729
     },
     "DesktopAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -39,21 +42,51 @@
         "id": "wasapi_output_capture",
         "mixers": 15,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Desktop Audio",
+        "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.0.00000000}.{e540c705-9221-494f-8885-b5eefabe9bd7}"
+            "device_id": "{0.0.0.00000000}.{d8024c5c-9f0b-4d47-83ed-027428d93e89}"
         },
         "sync": 0,
-        "volume": 0.054872002452611923
+        "volume": 1.0
+    },
+    "DesktopAudioDevice2": {
+        "balance": 0.5,
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
+        "enabled": true,
+        "flags": 0,
+        "hotkeys": {
+            "libobs.mute": [],
+            "libobs.push-to-mute": [],
+            "libobs.push-to-talk": [],
+            "libobs.unmute": []
+        },
+        "id": "wasapi_output_capture",
+        "mixers": 255,
+        "monitoring_type": 0,
+        "muted": false,
+        "name": "Desktop Audio 2",
+        "private_settings": {},
+        "push-to-mute": false,
+        "push-to-mute-delay": 0,
+        "push-to-talk": false,
+        "push-to-talk-delay": 0,
+        "settings": {
+            "device_id": "{0.0.0.00000000}.{b9bd31b7-325d-47f8-a7a5-83c3a882dd7e}"
+        },
+        "sync": 0,
+        "volume": 1.0
     },
     "current_program_scene": "Primary Monitor",
     "current_scene": "Primary Monitor",
     "current_transition": "Fade",
+    "groups": [],
     "modules": {
         "auto-scene-switcher": {
             "active": false,
@@ -65,6 +98,7 @@
         "captions": {
             "enabled": false,
             "lang_id": 1033,
+            "provider": "mssapi",
             "source": ""
         },
         "output-timer": {
@@ -76,75 +110,13 @@
             "streamTimerHours": 0,
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
-        }
+        },
+        "scripts-tool": []
     },
     "name": "Monitors",
     "preview_locked": false,
     "quick_transitions": [],
-    "saved_preview_projectors": [
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        },
-        {
-            "saved_preview_projectors": 0
-        }
-    ],
-    "saved_projectors": [
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        },
-        {
-            "saved_projectors": ""
-        }
-    ],
+    "saved_projectors": [],
     "scaling_enabled": false,
     "scaling_level": 0,
     "scaling_off_x": 0.0,
@@ -165,11 +137,13 @@
     ],
     "sources": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -180,6 +154,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop/Pad",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -198,6 +173,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Monitor 0",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -207,6 +183,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -217,6 +194,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:Q&A",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -236,6 +214,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -262,11 +241,13 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Intermission",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "custom_size": false,
                 "id_counter": 7,
                 "items": [
                     {
@@ -281,6 +262,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 1,
                         "locked": false,
                         "name": "Image:Background",
@@ -288,6 +270,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -308,6 +291,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 2,
                         "locked": false,
                         "name": "Text:StartingSoon",
@@ -315,6 +299,7 @@
                             "x": 960.0,
                             "y": 167.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -335,6 +320,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 3,
                         "locked": false,
                         "name": "Image:NowPlayingAlbum",
@@ -342,6 +328,7 @@
                             "x": 0.0,
                             "y": 891.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.37799999117851257,
@@ -362,6 +349,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 4,
                         "locked": false,
                         "name": "Text:NowPlaying (Big)",
@@ -369,6 +357,7 @@
                             "x": 193.0,
                             "y": 877.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -389,6 +378,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 5,
                         "locked": false,
                         "name": "Text:ComingUp",
@@ -396,6 +386,7 @@
                             "x": 1233.0,
                             "y": 426.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -416,6 +407,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 6,
                         "locked": false,
                         "name": "Text:BRB",
@@ -423,6 +415,7 @@
                             "x": 863.4122314453125,
                             "y": 94.399993896484375
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.82202380895614624,
@@ -443,6 +436,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 7,
                         "locked": false,
                         "name": "Text:Q&A",
@@ -450,6 +444,7 @@
                             "x": 404.0,
                             "y": 487.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -464,17 +459,20 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Display Capture": [],
                 "libobs.hide_scene_item.Image:Layout": [],
                 "libobs.hide_scene_item.Image:NowPlayingAlbum": [],
                 "libobs.hide_scene_item.Monitor 0": [],
                 "libobs.hide_scene_item.Text:NowPlaying": [],
                 "libobs.hide_scene_item.Text:Scrolling": [],
+                "libobs.show_scene_item.Display Capture": [],
                 "libobs.show_scene_item.Image:Layout": [],
                 "libobs.show_scene_item.Image:NowPlayingAlbum": [],
                 "libobs.show_scene_item.Monitor 0": [],
@@ -486,12 +484,14 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Primary Monitor",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 5,
+                "custom_size": false,
+                "id_counter": 6,
                 "items": [
                     {
                         "align": 5,
@@ -505,20 +505,22 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 1,
                         "locked": false,
                         "name": "Monitor 0",
                         "pos": {
                             "x": 0.0,
-                            "y": 40.0
+                            "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -532,6 +534,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 2,
                         "locked": false,
                         "name": "Image:Layout",
@@ -539,13 +542,14 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -559,6 +563,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 3,
                         "locked": false,
                         "name": "Image:NowPlayingAlbum",
@@ -566,13 +571,14 @@
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
                             "y": 0.10599999874830246
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -586,6 +592,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 4,
                         "locked": false,
                         "name": "Text:NowPlaying",
@@ -593,13 +600,14 @@
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -613,6 +621,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 5,
                         "locked": false,
                         "name": "Text:Scrolling",
@@ -620,6 +629,36 @@
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": false,
+                        "name": "Display Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -634,6 +673,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -646,11 +686,13 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Black Screen",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "custom_size": false,
                 "id_counter": 0,
                 "items": []
             },
@@ -658,6 +700,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -668,6 +711,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Image:Layout",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -680,6 +724,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -690,6 +735,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Image:NowPlayingAlbum",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -701,6 +747,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -711,6 +758,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:NowPlaying (Big)",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -736,11 +784,13 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -751,6 +801,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Scroll",
+                    "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
                     "push-to-talk": false,
@@ -773,6 +824,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:Scrolling",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -794,6 +846,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -804,6 +857,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Image:Background",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -815,6 +869,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -825,6 +880,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:StartingSoon",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -844,6 +900,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -854,6 +911,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:NowPlaying",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -876,6 +934,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -886,6 +945,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:ComingUp",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -906,6 +966,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -916,6 +977,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Text:BRB",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -935,6 +997,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -957,11 +1020,13 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Secondary Monitor",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "custom_size": false,
                 "id_counter": 5,
                 "items": [
                     {
@@ -976,6 +1041,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 1,
                         "locked": false,
                         "name": "Monitor 1",
@@ -983,6 +1049,7 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
@@ -1003,6 +1070,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 2,
                         "locked": false,
                         "name": "Image:Layout",
@@ -1010,13 +1078,14 @@
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1030,6 +1099,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 3,
                         "locked": false,
                         "name": "Image:NowPlayingAlbum",
@@ -1037,13 +1107,14 @@
                             "x": 112.0,
                             "y": 5.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.10599999874830246,
                             "y": 0.10599999874830246
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1057,6 +1128,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 4,
                         "locked": false,
                         "name": "Text:NowPlaying",
@@ -1064,13 +1136,14 @@
                             "x": 170.0,
                             "y": 8.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1084,6 +1157,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 5,
                         "locked": false,
                         "name": "Text:Scrolling",
@@ -1091,13 +1165,14 @@
                             "x": 516.0,
                             "y": 17.0
                         },
+                        "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     }
                 ]
             },
@@ -1105,6 +1180,7 @@
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1115,12 +1191,36 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Monitor 1",
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
                 "monitor": 1
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "monitor_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Display Capture",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "monitor": 0
             },
             "sync": 0,
             "volume": 1.0
