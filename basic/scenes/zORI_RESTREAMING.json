@@ -1,10 +1,12 @@
 {
     "AuxAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
         "filters": [
             {
+                "balance": 0.5,
                 "deinterlace_field_order": 0,
                 "deinterlace_mode": 0,
                 "enabled": false,
@@ -15,6 +17,7 @@
                 "monitoring_type": 0,
                 "muted": false,
                 "name": "Noise Suppression",
+                "prev_ver": 419430408,
                 "private_settings": {},
                 "push-to-mute": false,
                 "push-to-mute-delay": 0,
@@ -24,6 +27,7 @@
                     "suppress_level": -30
                 },
                 "sync": 0,
+                "versioned_id": "noise_suppress_filter",
                 "volume": 1.0
             }
         ],
@@ -39,6 +43,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "MAIN MIX",
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -48,9 +53,11 @@
             "device_id": "{0.0.1.00000000}.{bd838b4f-18c8-4b2d-9366-b8955503aaa5}"
         },
         "sync": 0,
+        "versioned_id": "wasapi_input_capture",
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -66,6 +73,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "Music + Game Audio",
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -75,6 +83,7 @@
             "device_id": "{0.0.0.00000000}.{39b6a516-7fe0-4359-8577-13a3d790baa5}"
         },
         "sync": 0,
+        "versioned_id": "wasapi_output_capture",
         "volume": 0.0
     },
     "current_program_scene": "MAIN RACE",
@@ -82,6 +91,7 @@
     "current_transition": "ORI TOURNEY Wipe",
     "groups": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -97,6 +107,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "REPLAY GROUP (both)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -105,8 +116,8 @@
             "settings": {
                 "close_when_inactive": true,
                 "custom_size": true,
-                "cx": 1277,
-                "cy": 397,
+                "cx": 3,
+                "cy": 40,
                 "id_counter": 0,
                 "is_local_file": true,
                 "items": [
@@ -173,9 +184,11 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -191,6 +204,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "REPLAY GROUP (right)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -199,8 +213,8 @@
             "settings": {
                 "close_when_inactive": true,
                 "custom_size": true,
-                "cx": 635,
-                "cy": 397,
+                "cx": 3,
+                "cy": 40,
                 "id_counter": 0,
                 "is_local_file": true,
                 "items": [
@@ -267,9 +281,11 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -285,6 +301,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "REPLAY GROUP (left)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -293,8 +310,8 @@
             "settings": {
                 "close_when_inactive": true,
                 "custom_size": true,
-                "cx": 635,
-                "cy": 397,
+                "cx": 1,
+                "cy": 40,
                 "id_counter": 0,
                 "is_local_file": true,
                 "items": [
@@ -361,6 +378,7 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         }
     ],
@@ -381,6 +399,7 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": false,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 0,
@@ -388,52 +407,21 @@
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
         },
-        "scripts-tool": [
-            {
-                "path": "D:/Documents/Ori tournament/ori_restreamer/ori_tourney_bg_selector.lua",
-                "settings": {
-                    "division": "Eki",
-                    "folder": "D:/Documents/Ori tournament/ori_restreamer/Assets/Videos/Backgrounds",
-                    "group": "Swallow's Nest",
-                    "source": "BACKGROUND - Group"
-                }
-            },
-            {
-                "path": "D:/Documents/Ori tournament/ori_restreamer/ori_tourney_instant_replay.lua",
-                "settings": {
-                    "instant_replay_both.trigger": [
-                        {
-                            "key": "OBS_KEY_F2"
-                        }
-                    ],
-                    "instant_replay_left.trigger": [
-                        {
-                            "key": "OBS_KEY_F1"
-                        }
-                    ],
-                    "instant_replay_right.trigger": [
-                        {
-                            "key": "OBS_KEY_F3"
-                        }
-                    ],
-                    "source_both": "REPLAY GROUP (both)",
-                    "source_left": "REPLAY GROUP (left)",
-                    "source_right": "REPLAY GROUP (right)"
-                }
-            }
-        ]
+        "scripts-tool": []
     },
     "name": "zORI RESTREAMING",
     "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 1000,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 1,
             "name": "ORI TOURNEY Wipe"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 2,
             "name": "ORI TOURNEY Grawp"
@@ -475,6 +463,7 @@
     ],
     "sources": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -485,6 +474,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "LABEL - Highlights",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -502,9 +492,11 @@
                 "text": "Highlights from last game"
             },
             "sync": 0,
+            "versioned_id": "text_gdiplus",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -527,6 +519,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Splash 2",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -684,9 +677,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -703,10 +698,11 @@
                 "libobs.unmute": []
             },
             "id": "vlc_source",
-            "mixers": 255,
+            "mixers": 0,
             "monitoring_type": 1,
             "muted": false,
             "name": "VIDEO - Credits + Highlights",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -721,15 +717,20 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "vlc_source",
             "volume": 0.55136799812316895
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -740,6 +741,7 @@
             "monitoring_type": 1,
             "muted": false,
             "name": "VIDEO - Short Intro 2",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -750,15 +752,20 @@
                 "local_file": "D:/Documents/Ori tournament/ori_restreamer/Assets/Videos/IntroShort2.mp4"
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -769,6 +776,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "BACKGROUND - Intermission",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -783,19 +791,27 @@
                 "looping": true
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Intermission",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -807,9 +823,11 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -826,6 +844,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "INTERMISSION",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -896,15 +915,20 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -915,6 +939,7 @@
             "monitoring_type": 1,
             "muted": false,
             "name": "VIDEO - Credits Only",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -926,9 +951,11 @@
                 "looping": false
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 0.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -939,6 +966,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "IMAGE - Replay BG (Both)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -949,9 +977,11 @@
                 "unload": true
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -962,6 +992,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "IMAGE - Replay BG (Right)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -972,9 +1003,11 @@
                 "unload": true
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -985,6 +1018,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "IMAGE - Replay BG (Left)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -995,15 +1029,20 @@
                 "unload": true
             },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -1014,6 +1053,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "BACKGROUND - Credits",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -1027,14 +1067,17 @@
                 "looping": true
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -1045,6 +1088,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (both runners)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1057,9 +1101,11 @@
                         "top": 50
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -1070,6 +1116,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Apply LUT",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1079,12 +1126,16 @@
                         "image_path": "C:/Program Files (x86)/obs-studio/data/obs-plugins/obs-filters/LUTs/teal_lows_orange_highs.png"
                     },
                     "sync": 0,
+                    "versioned_id": "clut_filter",
                     "volume": 1.0
                 }
             ],
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -1095,6 +1146,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "REPLAY - Both",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -1110,15 +1162,20 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -1129,6 +1186,7 @@
             "monitoring_type": 1,
             "muted": false,
             "name": "VIDEO - Intro",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1139,9 +1197,11 @@
                 "local_file": "D:/Documents/Ori tournament/ori_restreamer/Assets/Videos/IntroLong.mp4"
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1160,6 +1220,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Intro Video",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1259,19 +1320,27 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Credits",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1283,19 +1352,27 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Bracket",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1309,19 +1386,27 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Group Standings",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1333,9 +1418,11 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1352,6 +1439,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Bracket",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1422,9 +1510,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1447,6 +1537,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Credits",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1604,9 +1695,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1623,6 +1716,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Group Standings",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1693,19 +1787,27 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Stats",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1717,9 +1819,11 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1736,6 +1840,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Stats",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1806,15 +1911,20 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -1825,6 +1935,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "BACKGROUND - Group",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -1840,9 +1951,11 @@
                 "restart_on_activate": true
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1861,6 +1974,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Splash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1960,14 +2074,17 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -1978,6 +2095,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (720p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -1990,9 +2108,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2003,6 +2123,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (576p - The Lucidus)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2015,9 +2136,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2028,6 +2151,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (480p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2040,9 +2164,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2053,6 +2179,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (360p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2065,9 +2192,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2078,6 +2207,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "skyfouxx",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2089,9 +2219,11 @@
                         "top": 22
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2102,6 +2234,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "evooki",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2112,6 +2245,7 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 }
             ],
@@ -2122,6 +2256,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "STREAM - Racer 2",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2132,14 +2267,17 @@
                 "window": "knox - VLC media player:QWidget:vlc.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2150,6 +2288,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (720p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2163,9 +2302,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2176,6 +2317,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (576p - The Lucidus)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2187,9 +2329,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2200,6 +2344,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (480p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2211,9 +2356,11 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": false,
@@ -2224,6 +2371,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (360p)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2235,6 +2383,7 @@
                         "top": 21
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 }
             ],
@@ -2245,6 +2394,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "STREAM - Racer 1",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2255,9 +2405,11 @@
                 "window": "hydrasr - VLC media player:QWidget:vlc.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -2282,6 +2434,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "MAIN RACE",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2404,14 +2557,14 @@
                         "locked": true,
                         "name": "REPLAY - Right",
                         "pos": {
-                            "x": 1922.0,
-                            "y": 685.0
+                            "x": 2343.333251953125,
+                            "y": 4867.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 211.66667175292969,
+                            "y": 211.66667175292969
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2434,13 +2587,13 @@
                         "name": "IMAGE - Replay BG (Right)",
                         "pos": {
                             "x": 1920.0,
-                            "y": 646.0
+                            "y": -3388.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 211.66667175292969,
+                            "y": 211.66667175292969
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2495,14 +2648,14 @@
                         "locked": true,
                         "name": "REPLAY - Both",
                         "pos": {
-                            "x": 324.0,
-                            "y": 1155.0
+                            "x": 1173.333251953125,
+                            "y": 9403.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 425.66665649414063,
+                            "y": 425.66665649414063
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2525,13 +2678,13 @@
                         "name": "IMAGE - Replay BG (Both)",
                         "pos": {
                             "x": 322.0,
-                            "y": 1116.0
+                            "y": -7198.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 425.66665649414063,
+                            "y": 425.66665649414063
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2587,13 +2740,13 @@
                         "name": "REPLAY - Left",
                         "pos": {
                             "x": -635.0,
-                            "y": 685.0
+                            "y": 12910.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 635.0,
+                            "y": 635.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2616,13 +2769,13 @@
                         "name": "IMAGE - Replay BG (Left)",
                         "pos": {
                             "x": -635.0,
-                            "y": 646.0
+                            "y": -11855.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 635.0,
+                            "y": 635.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2663,19 +2816,27 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Race",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2688,19 +2849,27 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
             "id": "browser_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "OVERLAY - Splash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2712,39 +2881,14 @@
                 "width": 1920
             },
             "sync": 0,
+            "versioned_id": "browser_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "crop_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Crop",
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "bottom": 315,
-                        "left": 5,
-                        "right": 5,
-                        "top": 50
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
             "flags": 0,
             "hotkeys": {
                 "VLCSource.PlayPause": [],
@@ -2758,10 +2902,11 @@
                 "libobs.unmute": []
             },
             "id": "vlc_source",
-            "mixers": 255,
+            "mixers": 0,
             "monitoring_type": 1,
             "muted": true,
             "name": "Replays",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2776,14 +2921,17 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "vlc_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2794,6 +2942,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (left runner only)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2806,9 +2955,11 @@
                         "top": 50
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2819,6 +2970,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Apply LUT",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2828,12 +2980,16 @@
                         "image_path": "C:/Program Files (x86)/obs-studio/data/obs-plugins/obs-filters/LUTs/teal_lows_orange_highs.png"
                     },
                     "sync": 0,
+                    "versioned_id": "clut_filter",
                     "volume": 1.0
                 }
             ],
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -2844,6 +3000,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "REPLAY - Left",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -2860,14 +3017,17 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2878,6 +3038,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Crop (right runner only)",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2890,9 +3051,11 @@
                         "top": 50
                     },
                     "sync": 0,
+                    "versioned_id": "crop_filter",
                     "volume": 1.0
                 },
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2903,6 +3066,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Apply LUT",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2912,12 +3076,16 @@
                         "image_path": "C:/Program Files (x86)/obs-studio/data/obs-plugins/obs-filters/LUTs/teal_lows_orange_highs.png"
                     },
                     "sync": 0,
+                    "versioned_id": "clut_filter",
                     "volume": 1.0
                 }
             ],
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -2928,6 +3096,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "REPLAY - Right",
+            "prev_ver": 419430408,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -2943,14 +3112,17 @@
                 "restart_on_activate": false
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "filters": [
                 {
+                    "balance": 0.5,
                     "deinterlace_field_order": 0,
                     "deinterlace_mode": 0,
                     "enabled": true,
@@ -2961,6 +3133,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Color Key",
+                    "prev_ver": 419430408,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -2973,6 +3146,7 @@
                         "smoothness": 379
                     },
                     "sync": 0,
+                    "versioned_id": "color_key_filter",
                     "volume": 1.0
                 }
             ],
@@ -2983,6 +3157,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "TIMER - Countdown",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2993,15 +3168,20 @@
                 "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:LiveSplit.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
                 "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
@@ -3012,6 +3192,7 @@
             "monitoring_type": 1,
             "muted": false,
             "name": "VIDEO - Short Intro 1",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3022,6 +3203,7 @@
                 "local_file": "D:/Documents/Ori tournament/ori_restreamer/Assets/Videos/IntroShort1.mp4"
             },
             "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         }
     ],

@@ -16,7 +16,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "Main OUT 1/2",
-        "prev_ver": 419430401,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -47,7 +47,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Alt OUT 3/4",
-        "prev_ver": 419430401,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -89,19 +89,7 @@
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
         },
-        "scripts-tool": [
-            {
-                "path": "C:/Program Files (x86)/obs-studio/data/obs-plugins/frontend-tools/scripts/instant-replay.lua",
-                "settings": {
-                    "instant_replay.trigger": [
-                        {
-                            "key": "OBS_KEY_F6"
-                        }
-                    ],
-                    "source": "Instant Replay"
-                }
-            }
-        ]
+        "scripts-tool": []
     },
     "name": "Recording PC - 1080p",
     "preview_locked": false,
@@ -139,36 +127,6 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "hotkey_start": [],
-                "hotkey_stop": []
-            },
-            "id": "game_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "PC Game Capture",
-            "prev_ver": 419430401,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "capture_mode": "any_fullscreen",
-                "capture_overlays": false,
-                "window": "Overwatch:TankWindowClass:Overwatch.exe"
-            },
-            "sync": 0,
-            "versioned_id": "game_capture",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.PC Game Capture": [],
                 "libobs.show_scene_item.PC Game Capture": []
@@ -178,7 +136,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "PC Capture",
-            "prev_ver": 419430401,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -221,6 +179,36 @@
             },
             "sync": 0,
             "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "hotkey_start": [],
+                "hotkey_stop": []
+            },
+            "id": "game_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "PC Game Capture",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "capture_mode": "any_fullscreen",
+                "capture_overlays": false,
+                "window": "Overwatch:TankWindowClass:Overwatch.exe"
+            },
+            "sync": 0,
+            "versioned_id": "game_capture",
             "volume": 1.0
         }
     ],

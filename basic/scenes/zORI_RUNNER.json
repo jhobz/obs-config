@@ -1,5 +1,6 @@
 {
     "DesktopAudioDevice1": {
+        "balance": 0.5,
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
@@ -15,6 +16,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -25,6 +27,7 @@
             "use_device_timing": false
         },
         "sync": 0,
+        "versioned_id": "wasapi_output_capture",
         "volume": 1.0
     },
     "current_program_scene": "Stream",
@@ -32,6 +35,7 @@
     "current_transition": "Fade",
     "groups": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -47,6 +51,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Keys, Events, & Mapstones",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -119,9 +124,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -135,6 +142,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Blackout Pieces",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -265,9 +273,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -283,6 +293,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Dash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -355,9 +366,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -373,6 +386,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Grenade",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -445,9 +459,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -463,6 +479,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Charge Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -535,9 +552,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -553,6 +572,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Climb",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -625,9 +645,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -643,6 +665,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Feather",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -715,9 +738,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -733,6 +758,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Stomp",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -805,9 +831,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -823,6 +851,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Bash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -895,9 +924,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -913,6 +944,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Double Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -985,9 +1017,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1003,6 +1037,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Charge Flame",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1075,9 +1110,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1093,6 +1130,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Wall Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1165,9 +1203,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1183,6 +1223,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Sein",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1255,6 +1296,7 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "group",
             "volume": 1.0
         }
     ],
@@ -1275,6 +1317,7 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": false,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 0,
@@ -1299,6 +1342,7 @@
     ],
     "sources": [
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1309,6 +1353,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Black Square",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1318,9 +1363,11 @@
                 "color": 4278190080
             },
             "sync": 0,
+            "versioned_id": "color_source",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1331,6 +1378,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Events & Mapstones",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1342,9 +1390,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1355,6 +1405,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Keys",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1366,9 +1417,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1379,6 +1432,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Dash Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1390,9 +1444,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1403,6 +1459,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Grenade Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1414,9 +1471,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1427,6 +1486,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Charge Jump Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1438,9 +1498,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1451,6 +1513,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Climb Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1462,9 +1525,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1475,6 +1540,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Feather Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1486,9 +1552,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1499,6 +1567,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Stomp Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1510,9 +1579,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1523,6 +1594,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Bash Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1534,9 +1606,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1547,6 +1621,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Double Jump Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1558,9 +1633,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1571,6 +1648,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Charge Flame Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1582,9 +1660,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1595,6 +1675,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Wall Jump Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1606,9 +1687,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1619,6 +1702,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Disclaimer",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1634,9 +1718,11 @@
                 "text": "Watch at twitch.tv/speedgaming3 @ 3 pm EDT. I don't have chat open."
             },
             "sync": 0,
+            "versioned_id": "text_gdiplus",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -1681,6 +1767,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Stream",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2995,9 +3082,11 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3011,6 +3100,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Game Feed (PC)",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3023,9 +3113,11 @@
                 "window": "Ori And The Blind Forest#3A Definitive Edition:UnityWndClass:oriDE.exe"
             },
             "sync": 0,
+            "versioned_id": "game_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3036,6 +3128,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "LiveSplit",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3047,9 +3140,11 @@
                 "window": "LiveSplit:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:LiveSplit.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3060,6 +3155,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Sein",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3071,9 +3167,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3084,6 +3182,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Wall Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3095,9 +3194,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3108,6 +3209,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Charge Flame",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3119,9 +3221,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3132,6 +3236,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Double Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3143,9 +3248,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3156,6 +3263,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Bash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3167,9 +3275,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3180,6 +3290,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Stomp",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3191,9 +3302,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3204,6 +3317,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Feather",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3215,9 +3329,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3228,6 +3344,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Climb",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3239,9 +3356,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3252,6 +3371,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Charge Jump",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3263,9 +3383,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3276,6 +3398,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Grenade",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3287,9 +3410,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3300,6 +3425,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Dash",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3311,9 +3437,11 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
+            "balance": 0.5,
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
@@ -3324,6 +3452,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Rando - Sein Tree",
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -3335,6 +3464,7 @@
                 "window": "Ori DE Tracker:WindowsForms10.Window.8.app.0.141b42a_r6_ad1:OriDETracker.exe"
             },
             "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         }
     ],

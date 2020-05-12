@@ -663,22 +663,7 @@
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
         },
-        "scripts-tool": [
-            {
-                "path": "C:/Users/jeff/projects/ori-obs-scripts/ori_rando_seed_name.lua",
-                "settings": {
-                    "format": "%Dd %Mm\nSeed: %s",
-                    "load_hotkey": [
-                        {
-                            "alt": true,
-                            "key": "OBS_KEY_L"
-                        }
-                    ],
-                    "path": "C:/Program Files (x86)/Steam/steamapps/common/Ori DE/randomizer.dat",
-                    "source": "Ori seed name"
-                }
-            }
-        ]
+        "scripts-tool": []
     },
     "name": "MAIN STREAM",
     "preview_locked": false,

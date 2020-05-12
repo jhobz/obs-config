@@ -2,6 +2,7 @@ crashes/
 logs/
 profiler_data/
 plugin_config/
+updates/
 basic/profiles/**/service.json
 basic/profiles/**/service.json.bak
 *.bak

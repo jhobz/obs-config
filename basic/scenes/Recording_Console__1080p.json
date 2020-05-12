@@ -16,7 +16,7 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Line IN 3/4",
-        "prev_ver": 402653187,
+        "prev_ver": 419430408,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -26,6 +26,7 @@
             "device_id": "{0.0.1.00000000}.{9ddbef1f-fc82-44ba-8d9c-f1941f5c0902}"
         },
         "sync": 0,
+        "versioned_id": "wasapi_input_capture",
         "volume": 1.0
     },
     "current_program_scene": "Console Capture",
@@ -57,31 +58,21 @@
             "streamTimerMinutes": 0,
             "streamTimerSeconds": 0
         },
-        "scripts-tool": [
-            {
-                "path": "C:/Program Files (x86)/obs-studio/data/obs-plugins/frontend-tools/scripts/instant-replay.lua",
-                "settings": {
-                    "instant_replay.trigger": [
-                        {
-                            "key": "OBS_KEY_F6"
-                        }
-                    ],
-                    "source": "Instant Replay"
-                }
-            }
-        ]
+        "scripts-tool": []
     },
     "name": "Recording Console - 1080p",
     "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 5,
             "name": "Cut"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 6,
             "name": "Fade"
@@ -105,6 +96,42 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 193,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "c985 Capture",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "active": true,
+                "frame_interval": 333333,
+                "last_resolution": "1920x1080",
+                "last_video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}",
+                "res_type": 1,
+                "resolution": "1920x1080",
+                "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
+            },
+            "sync": 0,
+            "versioned_id": "dshow_input",
+            "volume": 0.68147200345993042
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.c985 Capture": [],
                 "libobs.show_scene_item.c985 Capture": []
@@ -114,7 +141,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Console Capture",
-            "prev_ver": 402653187,
+            "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -156,42 +183,8 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "dshow_input",
-            "mixers": 193,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "c985 Capture",
-            "prev_ver": 402653187,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "active": true,
-                "frame_interval": 333333,
-                "last_resolution": "1920x1080",
-                "last_video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}",
-                "res_type": 1,
-                "resolution": "1920x1080",
-                "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
-            },
-            "sync": 0,
-            "volume": 0.68147200345993042
         }
     ],
     "transition_duration": 300,
