@@ -1,3 +1,6 @@
 {
-    "bitrate": 500
+  "bitrate": 6000,
+  "preset": "faster",
+  "profile": "main",
+  "rate_control": "CBR"
 }

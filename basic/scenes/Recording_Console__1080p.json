@@ -14,9 +14,9 @@
         "id": "wasapi_input_capture",
         "mixers": 194,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Line IN 3/4",
-        "prev_ver": 419430408,
+        "prev_ver": 436273153,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -45,6 +45,9 @@
             "enabled": false,
             "lang_id": 1033,
             "provider": "mssapi",
+            "source": ""
+        },
+        "decklink_captions": {
             "source": ""
         },
         "output-timer": {
@@ -106,7 +109,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "c985 Capture",
-            "prev_ver": 419430408,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -114,16 +117,16 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "active": true,
-                "frame_interval": 333333,
+                "frame_interval": 166666,
                 "last_resolution": "1920x1080",
-                "last_video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}",
+                "last_video_device_id": "Game Capture HD60 Pro:\\\\?\\pci#22ven_12ab&dev_0380&subsys_00061cfa&rev_00#226&1e34ec45&0&0030020b#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000222}",
                 "res_type": 1,
                 "resolution": "1920x1080",
-                "video_device_id": "AVerMedia HD Capture C985 Bus 8:\\\\?\\pci#22ven_1af2&dev_a001&subsys_a0011af2&rev_00#224&17856a28&0&00e6#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{957bd672-7934-4b55-b81a-3e22b14c679a}"
+                "video_device_id": "Game Capture HD60 Pro:\\\\?\\pci#22ven_12ab&dev_0380&subsys_00061cfa&rev_00#226&1e34ec45&0&0030020b#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000222}"
             },
             "sync": 0,
             "versioned_id": "dshow_input",
-            "volume": 0.68147200345993042
+            "volume": 1.0
         },
         {
             "balance": 0.5,
@@ -141,7 +144,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Console Capture",
-            "prev_ver": 419430408,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
